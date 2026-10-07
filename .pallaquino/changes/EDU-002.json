@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "task": "EDU-002",
+  "timestamp": "2026-10-07T15:58:41.213865+00:00",
+  "mode": "GREENFIELD",
+  "autonomy": "STANDARD",
+  "application_files": [
+    ".github/workflows/deploy.yml",
+    ".github/workflows/radar.yml",
+    ".gitignore",
+    "components.json",
+    "eslint.config.js",
+    "index.html",
+    "package-lock.json",
+    "package.json",
+    "playwright.config.ts",
+    "public/favicon.svg",
+    "public/radar-checks.json",
+    "README.md",
+    "scripts/check-data.mjs",
+    "scripts/check_radar.py",
+    "src/App.tsx",
+    "src/components/CourseCard.tsx",
+    "src/components/CourseDetail.tsx",
+    "src/components/Filters.tsx",
+    "src/components/ui/button.tsx",
+    "src/components/ui/dialog.tsx",
+    "src/index.css",
+    "src/lib/catalog.ts",
+    "src/lib/progress.ts",
+    "src/lib/radar.ts",
+    "src/lib/store.ts",
+    "src/lib/utils.ts",
+    "src/main.tsx",
+    "src/views/Analytics.tsx",
+    "src/views/RadarView.tsx",
+    "src/views/RoutesView.tsx",
+    "tests/catalog.test.ts",
+    "tests/e2e/app.spec.ts",
+    "tests/test_radar.py",
+    "tsconfig.app.json",
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "vite.config.ts",
+    "vitest.config.ts"
+  ],
+  "source_research": "unchanged six hashes",
+  "metadata_baseline": "evidence/EDU-002/baseline",
+  "gates": {
+    "TEST": {
+      "result": "PASS",
+      "evidence": [
+        ".pallaquino/evidence/EDU-002/gates-20261007T153532Z.json",
+        ".pallaquino/evidence/EDU-002/gates-20261007T154141Z.json"
+      ],
+      "scope": "15 Vitest unit tests, 4 Python radar tests, 10 Playwright cases (desktop and Pixel 7 emulation)"
+    },
+    "LINT_TYPECHECK": {
+      "result": "PASS",
+      "evidence": [
+        ".pallaquino/evidence/EDU-002/gates-20261007T153532Z.json"
+      ]
+    },
+    "BUILD": {
+      "result": "PASS",
+      "evidence": [
+        ".pallaquino/evidence/EDU-002/gates-20261007T153532Z.json"
+      ],
+      "scope": "Vite production build with PAGES_BASE=/educate-free/, lazy analytics and React vendor chunk"
+    },
+    "SECURITY_CHECK": {
+      "result": "PASS_SCOPED",
+      "evidence": [
+        ".pallaquino/evidence/EDU-002/gates-20261007T153532Z.json"
+      ],
+      "scope": "npm audit --omit=dev: zero reported vulnerabilities; URL/import boundaries covered by tests; not an independent penetration test"
+    },
+    "WORKFLOW_LINT": {
+      "result": "PASS",
+      "evidence": [
+        ".pallaquino/evidence/EDU-002/workflow-runtime-gates.json"
+      ],
+      "scope": "actionlint 1.7.12 syntax/schema checks; downloaded binary hash verified"
+    },
+    "ACCESSIBILITY": {
+      "result": "PASS_SCOPED",
+      "evidence": [
+        ".pallaquino/evidence/EDU-002/gates-20261007T154141Z.json",
+        ".pallaquino/evidence/EDU-002/playwright.json"
+      ],
+      "scope": "axe WCAG 2A/2AA/2.1AA on five views and course dialog; keyboard skip, dialog Escape and return focus; not a full accessibility certification"
+    },
+    "SOURCE_INTEGRITY": {
+      "result": "PASS",
+      "evidence": [
+        {
+          "path": "PROMPT.MD",
+          "sha256": "dfc16f2d84548f68256077a1e63663ffd3e7627ff9427a02c3de2c4642119fd4"
+        },
+        {
+          "path": "investigacion/catalogo.md",
+          "sha256": "844c4d982fed3f0988b80458831ddf8c892533bafae7cfc86fbf97226e6151a6"
+        },
+        {
+          "path": "investigacion/catalogo.json",
+          "sha256": "ad42a93214955c8c8760b5c3d741a080edd08b10674142e7e6f3a01abc44284a"
+        },
+        {
+          "path": "investigacion/fuentes.json",
+          "sha256": "728f4e7f16b0765535a1a3e93013b0b229fd2798fec82f242bd865f8fe2b4241"
+        },
+        {
+          "path": "investigacion/construir_catalogo.py",
+          "sha256": "9760f6546bc247aab233a8184d43417c63ff841ab7f02a097cecf40ad2946dc2"
+        },
+        {
+          "path": "investigacion/validar_catalogo.py",
+          "sha256": "8f2fa5f99f6354904ac030c38e34f658c9f6aae7b5148688e5557494398a4bda"
+        }
+      ]
+    },
+    "VISUAL_QA": {
+      "result": "PASS_SCOPED",
+      "evidence": [
+        ".pallaquino/evidence/EDU-002/visual-qa.json"
+      ],
+      "scope": "Desktop/mobile captures reviewed for layout, headings, controls; ten captures with no horizontal document overflow. Static chart animations disabled for reliable rendering."
+    },
+    "CODE_REVIEW": {
+      "result": "PASS_SELF_REVIEW",
+      "reviewer": "codex-root",
+      "scope": "Read source and tests: explicit data costs/unknowns, hash routing, date derivation, validated backup replacement, HTTPS links, React-escaped content, manual source review and draft radar PR. No independent reviewer."
+    },
+    "ACCEPTANCE_VALIDATION": {
+      "result": "PASS_LOCAL_WITH_LIMITATIONS",
+      "scope": "95 offers, TOP 15, four initial routes and custom routes, browser progress/backup, filtered supply charts, 20 institutions and deploy/radar preparation"
+    },
+    "GITHUB_PUBLICATION": {
+      "result": "NOT_EXECUTED",
+      "reason": "No Git repository or identified remote; no authenticated destination configured. Workflows not run on GitHub."
+    }
+  },
+  "git_commit": null,
+  "publication": "pending destination",
+  "locks_released": 45
+}

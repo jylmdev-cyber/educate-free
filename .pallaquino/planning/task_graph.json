@@ -1,0 +1,831 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "EDU-002-P",
+      "title": "Prepare continuity, stack and risk",
+      "domain": "frontend",
+      "dependencies": [],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P1",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "react_expert",
+        "typescript_expert",
+        "frontend_accessibility_expert",
+        "testing_strategy_expert",
+        "evidence_validation_expert"
+      ],
+      "files": [
+        "runtime/capabilities.json",
+        "analysis/IMPACT_ANALYSIS.md",
+        "risk/risk_state.json",
+        "repository/REPOSITORY_MAP.json",
+        "repository/REPOSITORY_MAP.md",
+        "planning/task_graph.json",
+        "planning/TASK_GRAPH.md",
+        "planning/execution_plan.json",
+        "planning/EXECUTION_PLAN.md",
+        "continuity/HANDOFF.json",
+        "execution/file_locks.json",
+        "continuity/state/ARCHITECTURE_STATE.md",
+        "continuity/state/ASSUMPTIONS.md",
+        "continuity/state/CURRENT_TASK.md",
+        "continuity/state/EXTERNAL_DEPENDENCIES.md",
+        "continuity/state/KNOWN_ISSUES.md",
+        "continuity/state/OPEN_QUESTIONS.md",
+        "continuity/state/PIPELINE_STATE.md",
+        "continuity/state/PROJECT_STATE.md",
+        "continuity/state/TASK_BOARD.md",
+        "continuity/state/TECHNICAL_DEBT.md",
+        "continuity/state/TECH_STACK_STATE.md",
+        "continuity/state/TEST_STATUS.md"
+      ],
+      "acceptance_criteria": [
+        "95 source-backed offers available with combined filters and detail dialog",
+        "Interactive charts describe education supply, not inferred job demand",
+        "TOP 15 detailed recommendations reuse original IDs",
+        "Four learning routes with add/remove/reorder, personal progress, validated export/import, persistence across reload",
+        "Institution watchlist with deadlines, source notes, follow/review state and scheduled public-change checks via reviewable PR",
+        "Responsive keyboard-accessible design, real typecheck/lint/unit/E2E/build evidence",
+        "GitHub Pages workflow with repository base, hash routing, publish dist only; no credentials/backend",
+        "Preserve original research and previous checkpoint"
+      ],
+      "quality_gates": [
+        "TEST",
+        "LINT_TYPECHECK",
+        "BUILD",
+        "SECURITY_CHECK",
+        "CODE_REVIEW",
+        "ACCEPTANCE_VALIDATION"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T15:58:41.213865+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-002/final-validation.json"
+      ]
+    },
+    {
+      "id": "EDU-002-I",
+      "title": "Implement typed data, five modules and persistence",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-002-P"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P1",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "react_expert",
+        "typescript_expert",
+        "frontend_accessibility_expert",
+        "testing_strategy_expert",
+        "evidence_validation_expert"
+      ],
+      "files": [
+        "src",
+        "tests",
+        "scripts",
+        "public",
+        ".github",
+        "package.json",
+        "package-lock.json",
+        "index.html",
+        "tsconfig.json",
+        "tsconfig.app.json",
+        "tsconfig.node.json",
+        "vite.config.ts",
+        "vitest.config.ts",
+        "playwright.config.ts",
+        "eslint.config.js",
+        "components.json",
+        ".gitignore",
+        "README.md"
+      ],
+      "acceptance_criteria": [
+        "95 source-backed offers available with combined filters and detail dialog",
+        "Interactive charts describe education supply, not inferred job demand",
+        "TOP 15 detailed recommendations reuse original IDs",
+        "Four learning routes with add/remove/reorder, personal progress, validated export/import, persistence across reload",
+        "Institution watchlist with deadlines, source notes, follow/review state and scheduled public-change checks via reviewable PR",
+        "Responsive keyboard-accessible design, real typecheck/lint/unit/E2E/build evidence",
+        "GitHub Pages workflow with repository base, hash routing, publish dist only; no credentials/backend",
+        "Preserve original research and previous checkpoint"
+      ],
+      "quality_gates": [
+        "TEST",
+        "LINT_TYPECHECK",
+        "BUILD",
+        "SECURITY_CHECK",
+        "CODE_REVIEW",
+        "ACCEPTANCE_VALIDATION"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T15:58:41.213865+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-002/final-validation.json"
+      ]
+    },
+    {
+      "id": "EDU-002-G",
+      "title": "Verify filters, data safety, E2E/accessibility/build",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-002-I"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P1",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "react_expert",
+        "typescript_expert",
+        "frontend_accessibility_expert",
+        "testing_strategy_expert",
+        "evidence_validation_expert"
+      ],
+      "files": [
+        "tests",
+        "evidence/EDU-002"
+      ],
+      "acceptance_criteria": [
+        "95 source-backed offers available with combined filters and detail dialog",
+        "Interactive charts describe education supply, not inferred job demand",
+        "TOP 15 detailed recommendations reuse original IDs",
+        "Four learning routes with add/remove/reorder, personal progress, validated export/import, persistence across reload",
+        "Institution watchlist with deadlines, source notes, follow/review state and scheduled public-change checks via reviewable PR",
+        "Responsive keyboard-accessible design, real typecheck/lint/unit/E2E/build evidence",
+        "GitHub Pages workflow with repository base, hash routing, publish dist only; no credentials/backend",
+        "Preserve original research and previous checkpoint"
+      ],
+      "quality_gates": [
+        "TEST",
+        "LINT_TYPECHECK",
+        "BUILD",
+        "SECURITY_CHECK",
+        "CODE_REVIEW",
+        "ACCEPTANCE_VALIDATION"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T15:58:41.213865+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-002/final-validation.json"
+      ]
+    },
+    {
+      "id": "EDU-002-H",
+      "title": "Documentation, checkpoint and handoff",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-002-G"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P1",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "react_expert",
+        "typescript_expert",
+        "frontend_accessibility_expert",
+        "testing_strategy_expert",
+        "evidence_validation_expert"
+      ],
+      "files": [
+        "README.md",
+        "continuity"
+      ],
+      "acceptance_criteria": [
+        "95 source-backed offers available with combined filters and detail dialog",
+        "Interactive charts describe education supply, not inferred job demand",
+        "TOP 15 detailed recommendations reuse original IDs",
+        "Four learning routes with add/remove/reorder, personal progress, validated export/import, persistence across reload",
+        "Institution watchlist with deadlines, source notes, follow/review state and scheduled public-change checks via reviewable PR",
+        "Responsive keyboard-accessible design, real typecheck/lint/unit/E2E/build evidence",
+        "GitHub Pages workflow with repository base, hash routing, publish dist only; no credentials/backend",
+        "Preserve original research and previous checkpoint"
+      ],
+      "quality_gates": [
+        "TEST",
+        "LINT_TYPECHECK",
+        "BUILD",
+        "SECURITY_CHECK",
+        "CODE_REVIEW",
+        "ACCEPTANCE_VALIDATION"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T15:58:41.213865+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-002/final-validation.json"
+      ]
+    },
+    {
+      "id": "EDU-003-P",
+      "title": "Plan unified native select styles",
+      "domain": "frontend",
+      "dependencies": [],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "LOW",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "frontend_accessibility_expert"
+      ],
+      "files": [
+        "planning/SELECT_STYLE_PLAN.md",
+        "planning/task_graph.json",
+        "planning/TASK_GRAPH.md",
+        "planning/execution_plan.json",
+        "planning/EXECUTION_PLAN.md",
+        "repository/REPOSITORY_MAP.json",
+        "repository/REPOSITORY_MAP.md",
+        "risk/risk_state.json",
+        "analysis/IMPACT_ANALYSIS.md",
+        "continuity/HANDOFF.json",
+        "continuity/checkpoints",
+        "continuity/state/CURRENT_TASK.md",
+        "continuity/state/PIPELINE_STATE.md",
+        "continuity/state/TASK_BOARD.md",
+        "continuity/state/TEST_STATUS.md",
+        "execution/file_locks.json",
+        "evidence/EDU-003"
+      ],
+      "acceptance_criteria": [
+        "Inventory of all nine logical selects",
+        "Shared component, design tokens and states",
+        "Responsive/keyboard/label requirements",
+        "Native menu compatibility and risks stated",
+        "Future files and gates declared; application unchanged"
+      ],
+      "quality_gates": [
+        "PLAN_REVIEW",
+        "SOURCE_INTEGRITY"
+      ],
+      "status": "COMPLETE_PLANNING_ONLY"
+    },
+    {
+      "id": "EDU-004-I",
+      "title": "Shared component and migrate all contexts",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-003-P"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "LOW",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "react_expert",
+        "frontend_accessibility_expert"
+      ],
+      "files": [
+        "src/components/ui/native-select.tsx",
+        "src/index.css",
+        "src/components/Filters.tsx",
+        "src/App.tsx",
+        "src/views/RoutesView.tsx",
+        "src/components/CourseDetail.tsx",
+        "tests/e2e/app.spec.ts",
+        "playwright.config.ts"
+      ],
+      "acceptance_criteria": [
+        "Nine logical selects share NativeSelect without value/event changes",
+        "44px controls, 14px desktop/16px mobile, contrast and visible arrow/focus",
+        "Labels and native keyboard behavior preserved inside dialog",
+        "No overflow 320/393/768/1440 and 200% zoom; forced-colors fallback",
+        "Filters/sorter/routes/modal pass actual gates; source/store/dependencies unchanged"
+      ],
+      "quality_gates": [
+        "LINT_TYPECHECK",
+        "TEST",
+        "BUILD",
+        "E2E_ACCESSIBILITY",
+        "VISUAL_QA"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T16:41:25.482577+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-004/final-validation.json"
+      ]
+    },
+    {
+      "id": "EDU-004-G",
+      "title": "Verify native selection, visual QA and existing functions",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-004-I"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "LOW",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "react_expert",
+        "frontend_accessibility_expert"
+      ],
+      "files": [
+        "src/components/ui/native-select.tsx",
+        "src/index.css",
+        "src/components/Filters.tsx",
+        "src/App.tsx",
+        "src/views/RoutesView.tsx",
+        "src/components/CourseDetail.tsx",
+        "tests/e2e/app.spec.ts",
+        "playwright.config.ts"
+      ],
+      "acceptance_criteria": [
+        "Nine logical selects share NativeSelect without value/event changes",
+        "44px controls, 14px desktop/16px mobile, contrast and visible arrow/focus",
+        "Labels and native keyboard behavior preserved inside dialog",
+        "No overflow 320/393/768/1440 and 200% zoom; forced-colors fallback",
+        "Filters/sorter/routes/modal pass actual gates; source/store/dependencies unchanged"
+      ],
+      "quality_gates": [
+        "LINT_TYPECHECK",
+        "TEST",
+        "BUILD",
+        "E2E_ACCESSIBILITY",
+        "VISUAL_QA"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T16:41:25.482577+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-004/final-validation.json"
+      ]
+    },
+    {
+      "id": "EDU-004-H",
+      "title": "Record continuity, checkpoint and handoff",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-004-G"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "LOW",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "react_expert",
+        "frontend_accessibility_expert"
+      ],
+      "files": [
+        "src/components/ui/native-select.tsx",
+        "src/index.css",
+        "src/components/Filters.tsx",
+        "src/App.tsx",
+        "src/views/RoutesView.tsx",
+        "src/components/CourseDetail.tsx",
+        "tests/e2e/app.spec.ts",
+        "playwright.config.ts"
+      ],
+      "acceptance_criteria": [
+        "Nine logical selects share NativeSelect without value/event changes",
+        "44px controls, 14px desktop/16px mobile, contrast and visible arrow/focus",
+        "Labels and native keyboard behavior preserved inside dialog",
+        "No overflow 320/393/768/1440 and 200% zoom; forced-colors fallback",
+        "Filters/sorter/routes/modal pass actual gates; source/store/dependencies unchanged"
+      ],
+      "quality_gates": [
+        "LINT_TYPECHECK",
+        "TEST",
+        "BUILD",
+        "E2E_ACCESSIBILITY",
+        "VISUAL_QA"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T16:41:25.482577+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-004/final-validation.json"
+      ]
+    },
+    {
+      "id": "EDU-005-D",
+      "title": "Explore three modern select directions",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-004-H"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "LOW",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "product-design:ideate",
+        "imagegen"
+      ],
+      "files": [
+        "planning/SELECT_MODERN_OPTIONS.md",
+        "planning/task_graph.json",
+        "planning/TASK_GRAPH.md",
+        "planning/execution_plan.json",
+        "planning/EXECUTION_PLAN.md",
+        "repository/REPOSITORY_MAP.json",
+        "repository/REPOSITORY_MAP.md",
+        "risk/risk_state.json",
+        "analysis/IMPACT_ANALYSIS.md",
+        "continuity/HANDOFF.json",
+        "continuity/checkpoints",
+        "execution/file_locks.json",
+        "evidence/EDU-005",
+        "continuity/state/CURRENT_TASK.md",
+        "continuity/state/PIPELINE_STATE.md",
+        "continuity/state/TASK_BOARD.md",
+        "continuity/state/TEST_STATUS.md"
+      ],
+      "acceptance_criteria": [
+        "Three independent modern concepts grounded in current app",
+        "Application unchanged",
+        "Visual review, continuity and handoff"
+      ],
+      "quality_gates": [
+        "VISUAL_CONCEPT_REVIEW",
+        "SOURCE_INTEGRITY"
+      ],
+      "status": "COMPLETE_DESIGN_OPTIONS",
+      "completed_at": "2026-10-07T17:00:25.772657+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-005/concepts.json",
+        ".pallaquino/evidence/EDU-005/review.json"
+      ]
+    },
+    {
+      "id": "EDU-006-I",
+      "title": "Implement capsule filters and shared menus",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-005-D"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "react_expert",
+        "frontend_accessibility_expert",
+        "product-design:image-to-code"
+      ],
+      "files": [
+        "src/components/ui/select-field.tsx",
+        "src/components/ui/native-select.tsx",
+        "src/components/Filters.tsx",
+        "src/App.tsx",
+        "src/views/RoutesView.tsx",
+        "src/components/CourseDetail.tsx",
+        "src/index.css",
+        "tests/e2e/app.spec.ts",
+        "package.json",
+        "package-lock.json",
+        "design-qa.md"
+      ],
+      "acceptance_criteria": [
+        "Exact selected option 2; capsule filters with six dimensions and individual reset",
+        "Shared styled menus in all nine logical select contexts",
+        "95 source offers, values/callbacks, favorites/routes/progress intact",
+        "Keyboard, dialog focus/escape, long labels, narrow screens and forced colors checked",
+        "Measured design comparison, actual gates, continuity and checkpoint"
+      ],
+      "quality_gates": [
+        "TYPE_LINT",
+        "UNIT",
+        "BUILD",
+        "E2E_AXE",
+        "VISUAL_QA",
+        "DEPENDENCY_AUDIT",
+        "SOURCE_INTEGRITY"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T17:39:13.733364+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-006/final-validation.json",
+        "design-qa.md"
+      ]
+    },
+    {
+      "id": "EDU-006-G",
+      "title": "Verify keyboard, regressions and selected visual",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-006-I"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "react_expert",
+        "frontend_accessibility_expert",
+        "product-design:image-to-code"
+      ],
+      "files": [
+        "src/components/ui/select-field.tsx",
+        "src/components/ui/native-select.tsx",
+        "src/components/Filters.tsx",
+        "src/App.tsx",
+        "src/views/RoutesView.tsx",
+        "src/components/CourseDetail.tsx",
+        "src/index.css",
+        "tests/e2e/app.spec.ts",
+        "package.json",
+        "package-lock.json",
+        "design-qa.md"
+      ],
+      "acceptance_criteria": [
+        "Exact selected option 2; capsule filters with six dimensions and individual reset",
+        "Shared styled menus in all nine logical select contexts",
+        "95 source offers, values/callbacks, favorites/routes/progress intact",
+        "Keyboard, dialog focus/escape, long labels, narrow screens and forced colors checked",
+        "Measured design comparison, actual gates, continuity and checkpoint"
+      ],
+      "quality_gates": [
+        "TYPE_LINT",
+        "UNIT",
+        "BUILD",
+        "E2E_AXE",
+        "VISUAL_QA",
+        "DEPENDENCY_AUDIT",
+        "SOURCE_INTEGRITY"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T17:39:13.733364+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-006/final-validation.json",
+        "design-qa.md"
+      ]
+    },
+    {
+      "id": "EDU-006-H",
+      "title": "Evidence, checkpoint and handoff",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-006-G"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "react_expert",
+        "frontend_accessibility_expert",
+        "product-design:image-to-code"
+      ],
+      "files": [
+        "src/components/ui/select-field.tsx",
+        "src/components/ui/native-select.tsx",
+        "src/components/Filters.tsx",
+        "src/App.tsx",
+        "src/views/RoutesView.tsx",
+        "src/components/CourseDetail.tsx",
+        "src/index.css",
+        "tests/e2e/app.spec.ts",
+        "package.json",
+        "package-lock.json",
+        "design-qa.md"
+      ],
+      "acceptance_criteria": [
+        "Exact selected option 2; capsule filters with six dimensions and individual reset",
+        "Shared styled menus in all nine logical select contexts",
+        "95 source offers, values/callbacks, favorites/routes/progress intact",
+        "Keyboard, dialog focus/escape, long labels, narrow screens and forced colors checked",
+        "Measured design comparison, actual gates, continuity and checkpoint"
+      ],
+      "quality_gates": [
+        "TYPE_LINT",
+        "UNIT",
+        "BUILD",
+        "E2E_AXE",
+        "VISUAL_QA",
+        "DEPENDENCY_AUDIT",
+        "SOURCE_INTEGRITY"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T17:39:13.733364+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-006/final-validation.json",
+        "design-qa.md"
+      ]
+    },
+    {
+      "id": "EDU-007-I",
+      "title": "Prepare GitHub docs, repository hygiene and CI",
+      "domain": "release",
+      "dependencies": [
+        "EDU-006-H"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "git_release_expert",
+        "github_actions_expert",
+        "evidence_validation_expert"
+      ],
+      "files": [
+        "README.md",
+        ".gitignore",
+        ".gitattributes",
+        ".editorconfig",
+        ".nvmrc",
+        "CONTRIBUTING.md",
+        "LICENSE",
+        "docs/DEPLOYMENT.md",
+        "docs/VALIDATION.md",
+        "docs/images/catalogo.png",
+        ".github/workflows/deploy.yml",
+        ".github/workflows/radar.yml",
+        ".github/dependabot.yml",
+        ".github/PULL_REQUEST_TEMPLATE.md",
+        ".github/ISSUE_TEMPLATE/bug_report.yml",
+        ".github/ISSUE_TEMPLATE/feature_request.yml",
+        "playwright.config.ts",
+        "tests/e2e/app.spec.ts",
+        "scripts/check-repository.mjs",
+        "package.json",
+        "package-lock.json",
+        ".pallaquino/.githooks/commit-msg",
+        "investigacion/fuentes.json"
+      ],
+      "acceptance_criteria": [
+        "Detailed Spanish README with truthful static stack badges and real local screenshot",
+        "Reproducible setup/quality commands and complete Pages/radar instructions without invented destination",
+        "Git main initialized locally with human authorship policy; no remote creation/push",
+        "Ignore dependencies/build/local evidence and scan prospective tracked files without exposing secrets",
+        "CI outputs isolated; gates and workflow checks recorded; application/data unchanged",
+        "Map/DAG/plan/risk/continuity/checkpoint and handoff completed"
+      ],
+      "quality_gates": [
+        "DOC_REVIEW",
+        "REPOSITORY_HYGIENE",
+        "WORKFLOW_CHECK",
+        "APP_GATES",
+        "SOURCE_INTEGRITY",
+        "GIT_AUTHORSHIP"
+      ],
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "EDU-007-G",
+      "title": "Verify publication readiness locally",
+      "domain": "release",
+      "dependencies": [
+        "EDU-007-I"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "git_release_expert",
+        "github_actions_expert",
+        "evidence_validation_expert"
+      ],
+      "files": [
+        "README.md",
+        ".gitignore",
+        ".gitattributes",
+        ".editorconfig",
+        ".nvmrc",
+        "CONTRIBUTING.md",
+        "LICENSE",
+        "docs/DEPLOYMENT.md",
+        "docs/VALIDATION.md",
+        "docs/images/catalogo.png",
+        ".github/workflows/deploy.yml",
+        ".github/workflows/radar.yml",
+        ".github/dependabot.yml",
+        ".github/PULL_REQUEST_TEMPLATE.md",
+        ".github/ISSUE_TEMPLATE/bug_report.yml",
+        ".github/ISSUE_TEMPLATE/feature_request.yml",
+        "playwright.config.ts",
+        "tests/e2e/app.spec.ts",
+        "scripts/check-repository.mjs",
+        "package.json",
+        "package-lock.json",
+        ".pallaquino/.githooks/commit-msg",
+        "investigacion/fuentes.json"
+      ],
+      "acceptance_criteria": [
+        "Detailed Spanish README with truthful static stack badges and real local screenshot",
+        "Reproducible setup/quality commands and complete Pages/radar instructions without invented destination",
+        "Git main initialized locally with human authorship policy; no remote creation/push",
+        "Ignore dependencies/build/local evidence and scan prospective tracked files without exposing secrets",
+        "CI outputs isolated; gates and workflow checks recorded; application/data unchanged",
+        "Map/DAG/plan/risk/continuity/checkpoint and handoff completed"
+      ],
+      "quality_gates": [
+        "DOC_REVIEW",
+        "REPOSITORY_HYGIENE",
+        "WORKFLOW_CHECK",
+        "APP_GATES",
+        "SOURCE_INTEGRITY",
+        "GIT_AUTHORSHIP"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "id": "EDU-007-H",
+      "title": "Commit, continuity, checkpoint and handoff",
+      "domain": "release",
+      "dependencies": [
+        "EDU-007-G"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "git_release_expert",
+        "github_actions_expert",
+        "evidence_validation_expert"
+      ],
+      "files": [
+        "README.md",
+        ".gitignore",
+        ".gitattributes",
+        ".editorconfig",
+        ".nvmrc",
+        "CONTRIBUTING.md",
+        "LICENSE",
+        "docs/DEPLOYMENT.md",
+        "docs/VALIDATION.md",
+        "docs/images/catalogo.png",
+        ".github/workflows/deploy.yml",
+        ".github/workflows/radar.yml",
+        ".github/dependabot.yml",
+        ".github/PULL_REQUEST_TEMPLATE.md",
+        ".github/ISSUE_TEMPLATE/bug_report.yml",
+        ".github/ISSUE_TEMPLATE/feature_request.yml",
+        "playwright.config.ts",
+        "tests/e2e/app.spec.ts",
+        "scripts/check-repository.mjs",
+        "package.json",
+        "package-lock.json",
+        ".pallaquino/.githooks/commit-msg",
+        "investigacion/fuentes.json"
+      ],
+      "acceptance_criteria": [
+        "Detailed Spanish README with truthful static stack badges and real local screenshot",
+        "Reproducible setup/quality commands and complete Pages/radar instructions without invented destination",
+        "Git main initialized locally with human authorship policy; no remote creation/push",
+        "Ignore dependencies/build/local evidence and scan prospective tracked files without exposing secrets",
+        "CI outputs isolated; gates and workflow checks recorded; application/data unchanged",
+        "Map/DAG/plan/risk/continuity/checkpoint and handoff completed"
+      ],
+      "quality_gates": [
+        "DOC_REVIEW",
+        "REPOSITORY_HYGIENE",
+        "WORKFLOW_CHECK",
+        "APP_GATES",
+        "SOURCE_INTEGRITY",
+        "GIT_AUTHORSHIP"
+      ],
+      "status": "PLANNED"
+    }
+  ]
+}

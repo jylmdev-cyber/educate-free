@@ -1,0 +1,27 @@
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, PieChart, Pie, Cell } from 'recharts'
+import { CircleHelp, ChartNoAxesCombined, GraduationCap, Clock3, Building2 } from 'lucide-react'
+import type { Course } from '@/lib/catalog'
+import { distribution, durationHours, groups, topics, effectiveRegistration } from '@/lib/catalog'
+const COLORS = ['#315d4c', '#7b9158', '#b7c977', '#d4bb8c', '#819da5', '#bfa794']
+export default function Analytics({ courses }: { courses: Course[] }) {
+  const area = distribution(courses, c => topics(c)[0]).slice(0, 7)
+  const regions = distribution(courses, c => groups[c.group])
+  const known = courses.flatMap(c => { const h = durationHours(c.duration); return h === null ? [] : [h] })
+  const status = distribution(courses, effectiveRegistration)
+  const institutions = distribution(courses, c => c.institution.split(' / ')[0]).slice(0, 7)
+  const categories = distribution(courses, c => c.category)
+  const mean = known.length ? Math.round(known.reduce((a, b) => a + b, 0) / known.length) : null
+  return <div className="analytics-view">
+    <div className="metric-grid"><Metric icon={<GraduationCap />} value={courses.length} label="Oportunidades en la selección" /><Metric icon={<Building2 />} value={new Set(courses.map(c => c.institution)).size} label="Instituciones / proveedores" /><Metric icon={<Clock3 />} value={mean === null ? '—' : `${mean} h`} label={`Duración media · ${known.length} fichas comparables`} /><Metric icon={<CircleHelp />} value={courses.length - known.length} label="Duraciones no comparables" /></div>
+    <p className="context-note"><ChartNoAxesCombined size={18} />Este panel describe la oferta formativa del informe, no la demanda laboral ni los salarios. Los filtros se aplican a todos los gráficos.</p>
+    {!courses.length ? <div className="empty-state"><h3>No hay datos para esta selección</h3><p>Prueba con otros filtros para explorar la oferta.</p></div> : <div className="chart-grid">
+      <ChartPanel title="¿Qué puedes aprender?" subtitle="Distribución por área principal" data={area}><ResponsiveContainer width="100%" height={270}><BarChart accessibilityLayer={false} data={area} layout="vertical" margin={{ left: 10, right: 25 }}><CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#e6e9e1" /><XAxis type="number" allowDecimals={false} tick={{ fontSize: 12 }} /><YAxis type="category" dataKey="name" width={130} tick={{ fontSize: 12 }} /><Tooltip /><Bar isAnimationActive={false} dataKey="value" name="Oportunidades" fill="#315d4c" radius={[0, 5, 5, 0]} /></BarChart></ResponsiveContainer></ChartPanel>
+      <ChartPanel title="Aprende desde donde estés" subtitle="Alcance geográfico de la oferta" data={regions}><div className="donut"><ResponsiveContainer width="100%" height={240}><PieChart accessibilityLayer={false}><Pie isAnimationActive={false} rootTabIndex={-1} data={regions} dataKey="value" nameKey="name" innerRadius={66} outerRadius={96} paddingAngle={4}>{regions.map((r, i) => <Cell key={r.name} fill={COLORS[i]} />)}</Pie><Tooltip /></PieChart></ResponsiveContainer><div className="donut-total"><strong>{courses.length}</strong><span>oportunidades</span></div></div><div className="chart-legend">{regions.map((r, i) => <span key={r.name}><i style={{ backgroundColor: COLORS[i] }} />{r.name}<strong>{r.value}</strong></span>)}</div></ChartPanel>
+      <ChartPanel title="Quiénes impulsan tu aprendizaje" subtitle="Proveedores con más oportunidades en el informe" data={institutions}><ResponsiveContainer width="100%" height={260}><BarChart accessibilityLayer={false} data={institutions} layout="vertical" margin={{ left: 10, right: 25 }}><XAxis type="number" allowDecimals={false} tick={{ fontSize: 12 }} /><YAxis type="category" dataKey="name" width={145} tick={{ fontSize: 11 }} /><Tooltip /><Bar isAnimationActive={false} dataKey="value" name="Oportunidades" fill="#879d59" radius={[0, 5, 5, 0]} /></BarChart></ResponsiveContainer></ChartPanel>
+      <div className="chart-panel"><h3>Acceso y gratuidad</h3><p>Un curso gratis puede tener credencial de pago.</p><div className="breakdown-list">{categories.map(r => <div key={r.name}><span>{r.name}</span><strong>{r.value}</strong><div><span style={{ width: `${r.value / courses.length * 100}%` }} /></div></div>)}</div><div className="status-counts">{status.map(r => <span key={r.name}>{r.name.toLowerCase()}: <strong>{r.value}</strong></span>)}</div></div>
+    </div>}
+    <p className="footnote">Una ficha se cuenta una vez en su área principal. El grupo Perú se concentra en CAPACÍTA-T, por lo que no representa una muestra de todas las regiones. Semanas, rangos y duraciones contradictorias no se convierten artificialmente en horas.</p>
+  </div>
+}
+function Metric({ icon, value, label }: { icon: React.ReactNode; value: number | string; label: string }) { return <div className="metric"><span className="metric-icon">{icon}</span><strong>{value}</strong><p>{label}</p></div> }
+function ChartPanel({ title, subtitle, children, data }: { title: string; subtitle: string; children: React.ReactNode; data: { name: string; value: number }[] }) { return <section className="chart-panel"><h3>{title}</h3><p>{subtitle}</p><div aria-hidden="true">{children}</div><details><summary>Ver los datos del gráfico</summary><table><caption className="sr-only">{title}</caption><thead><tr><th>Grupo</th><th>Oportunidades</th></tr></thead><tbody>{data.map(row => <tr key={row.name}><td>{row.name}</td><td>{row.value}</td></tr>)}</tbody></table></details></section> }

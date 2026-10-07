@@ -1,0 +1,48 @@
+name: Propose public radar update
+on:
+  schedule:
+    - cron: '0 13 * * 1' # Mondays, 08:00 America/Lima
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: institutional-radar
+  cancel-in-progress: false
+
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: main
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p test_radar.py -v
+      - run: python scripts/check_radar.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: public-radar-proposal
+          path: public/radar-checks.json
+          retention-days: 30
+      - uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8
+        with:
+          branch: automation/radar
+          add-paths: public/radar-checks.json
+          commit-message: 'chore: propose public source radar checks'
+          title: 'Radar: revisión de fuentes institucionales'
+          draft: true
+          body: |
+            Chequeo de páginas públicas: nuevas líneas base, cambios de contenido y fallos de acceso.
+
+            Revisar las fuentes con state=changed y los fallos antes de fusionar.
+            Las páginas pueden cambiar por menús, publicidad o contenido dinámico; esto no confirma una convocatoria.
+            El catálogo, las fechas de matrícula y los precios no se modifican automáticamente.
+
+            Revisar si GitHub solicita aprobar la ejecución de workflows para este PR generado con GITHUB_TOKEN.
+            Si no hay validación iniciada, ejecutar el workflow de validación manualmente sobre esta rama antes de fusionar.

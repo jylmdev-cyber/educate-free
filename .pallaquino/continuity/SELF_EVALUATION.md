@@ -1,0 +1,3 @@
+# EDU-002 self-evaluation
+
+Requested: implement agreed SPA and prepare GitHub Pages. Implemented: five modules, typed immutable source, personal progress/backups, charts and radar proposal workflow. Verified: commands and exit codes in final-validation references, screenshots reviewed. Missing: GitHub destination/publication, remote workflow execution, independent reviewer and physical mobile test. Assumptions: GREENFIELD/STANDARD, offer-supply analysis only. Risks: stale public data, origin-local state, index watch IDs. Rollback: application paths created only; restore previous metadata from evidence/EDU-002/baseline. Source research untouched. Next action: obtain repository URL, publish dist through tested workflow, verify real URL.

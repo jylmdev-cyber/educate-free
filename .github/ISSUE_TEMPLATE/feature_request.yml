@@ -1,0 +1,18 @@
+name: Proponer una mejora
+description: Explica una necesidad y cómo ayudaría a quienes aprenden.
+title: "[Mejora] "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Necesidad
+      description: ¿Qué tarea o problema quieres resolver?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Propuesta
+      description: Describe el resultado deseado y ejemplos útiles.
+    validations:
+      required: true

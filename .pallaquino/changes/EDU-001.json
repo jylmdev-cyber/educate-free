@@ -1,0 +1,61 @@
+{
+  "task_id": "EDU-001",
+  "timestamp": "2026-10-07T14:22:41.468442+00:00",
+  "files_created": [
+    "investigacion/catalogo.md",
+    "investigacion/catalogo.json",
+    "investigacion/fuentes.json",
+    "investigacion/construir_catalogo.py",
+    "investigacion/validar_catalogo.py",
+    ".pallaquino/evidence/EDU-001/",
+    ".pallaquino/changes/EDU-001.json",
+    "checkpoint EDU-001"
+  ],
+  "files_modified": [
+    ".pallaquino/runtime/capabilities.json",
+    ".pallaquino/repository/REPOSITORY_MAP.json",
+    ".pallaquino/repository/REPOSITORY_MAP.md",
+    ".pallaquino/analysis/IMPACT_ANALYSIS.md",
+    ".pallaquino/risk/risk_state.json",
+    ".pallaquino/planning/",
+    ".pallaquino/execution/file_locks.json",
+    ".pallaquino/continuity/HANDOFF.json",
+    ".pallaquino/continuity/state/PROJECT_STATE.md",
+    ".pallaquino/continuity/state/CURRENT_TASK.md",
+    ".pallaquino/continuity/state/TASK_BOARD.md",
+    ".pallaquino/continuity/state/ARCHITECTURE_STATE.md",
+    ".pallaquino/continuity/state/TECH_STACK_STATE.md",
+    ".pallaquino/continuity/state/TEST_STATUS.md",
+    ".pallaquino/continuity/state/KNOWN_ISSUES.md",
+    ".pallaquino/continuity/state/PIPELINE_STATE.md",
+    ".pallaquino/continuity/state/ASSUMPTIONS.md",
+    ".pallaquino/continuity/state/OPEN_QUESTIONS.md",
+    ".pallaquino/continuity/state/EXTERNAL_DEPENDENCIES.md",
+    ".pallaquino/continuity/state/TECHNICAL_DEBT.md"
+  ],
+  "files_deleted": [],
+  "migrations": [],
+  "dependencies": [],
+  "endpoints": [],
+  "tests": [
+    "28 structural catalog checks",
+    "Syntax compilation proxy of scoped Python scripts"
+  ],
+  "decisions": [
+    "Documentation-only research",
+    "One agent; evidence_validation_expert",
+    "No duplicate course counts, regional origin fabricated or free trials counted",
+    "Scope limited by public access and unknowns",
+    "No Git commit possible; no repository initialization"
+  ],
+  "remaining_limits": [
+    "Se consultaron fichas, políticas y catálogos oficiales. La disponibilidad pública permanente no garantiza cupos ni recepción de certificados.",
+    "Sin sesión autenticada: no se verificó matrícula individual, elegibilidad final ni emisión de credenciales.",
+    "La oferta peruana se concentra en CAPACÍTA-T: no es una muestra independiente de treinta regiones.",
+    "Búsquedas regionales y de varias instituciones no encontraron una convocatoria verificable o devolvieron información parcial; no demuestra ausencia de oferta.",
+    "LinkedIn, Facebook, Instagram y X se buscaron mediante índices públicos. No se revisaron feeds completos ni publicaciones privadas.",
+    "No todas las empresas, universidades o dependencias enumeradas en PROMPT.MD tuvieron revisión individual. Cobertura amplia, exhaustividad total no demostrada.",
+    "Campos desconocidos conservan el texto literal exigido; fechas de matrícula no se convierten en fechas de inicio."
+  ],
+  "rollback": "Isolated new artifacts; inherited checkpoints retained. No full pre-change metadata backup."
+}

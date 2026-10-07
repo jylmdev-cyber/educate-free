@@ -1,0 +1,27 @@
+name: Reportar un problema
+description: Describe un fallo reproducible de la aplicación o sus datos.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema y resultado esperado
+      description: Describe la vista afectada y qué esperabas que ocurriera.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      placeholder: "1. Abrir catálogo\n2. Seleccionar un filtro\n3. ..."
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Navegador, sistema y tamaño de pantalla
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidencia o fuente institucional
+      description: Adjunta una captura o enlace público; omite respaldos personales y credenciales.

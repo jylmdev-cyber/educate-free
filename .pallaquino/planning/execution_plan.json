@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "task": "EDU-007",
+  "mode": "MAINTENANCE",
+  "autonomy": "STANDARD",
+  "risk": "MEDIUM",
+  "status": "IMPLEMENTATION",
+  "files": [
+    "README.md",
+    ".gitignore",
+    ".gitattributes",
+    ".editorconfig",
+    ".nvmrc",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "docs/DEPLOYMENT.md",
+    "docs/VALIDATION.md",
+    "docs/images/catalogo.png",
+    ".github/workflows/deploy.yml",
+    ".github/workflows/radar.yml",
+    ".github/dependabot.yml",
+    ".github/PULL_REQUEST_TEMPLATE.md",
+    ".github/ISSUE_TEMPLATE/bug_report.yml",
+    ".github/ISSUE_TEMPLATE/feature_request.yml",
+    "playwright.config.ts",
+    "tests/e2e/app.spec.ts",
+    "scripts/check-repository.mjs",
+    "package.json",
+    "package-lock.json",
+    ".pallaquino/.githooks/commit-msg",
+    "investigacion/fuentes.json"
+  ],
+  "criteria": [
+    "Detailed Spanish README with truthful static stack badges and real local screenshot",
+    "Reproducible setup/quality commands and complete Pages/radar instructions without invented destination",
+    "Git main initialized locally with human authorship policy; no remote creation/push",
+    "Ignore dependencies/build/local evidence and scan prospective tracked files without exposing secrets",
+    "CI outputs isolated; gates and workflow checks recorded; application/data unchanged",
+    "Map/DAG/plan/risk/continuity/checkpoint and handoff completed"
+  ],
+  "steps": [
+    "Review actual repo and official GitHub docs",
+    "Declare/reserve paths and protect application/data",
+    "Detailed README/badges, docs, hygiene and CI evidence paths",
+    "Initialize main/local authorship, scan candidates and validate gates",
+    "Conventional commit, checkpoint/handoff"
+  ],
+  "remote_actions": "None: destination not supplied",
+  "license": "Await optional preference; no product license inferred from framework",
+  "scope_amendment": {
+    "timestamp": "2026-10-07T18:22:51.352172+00:00",
+    "reason": "Repository scan found an expired presigned public-source URL; retain original locally and remove temporary query capability before versioning",
+    "baseline": "Local ignored baseline/workspace/investigacion/fuentes.json",
+    "path": "investigacion/fuentes.json"
+  }
+}

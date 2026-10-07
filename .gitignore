@@ -1,0 +1,33 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+
+# Local engineering evidence is preserved on disk, not uploaded with the product.
+.pallaquino/evidence/
+.pallaquino/runtime/
+.pallaquino/repository/
+.pallaquino/execution/file_locks.json
+.pallaquino/continuity/checkpoints/
+.pallaquino/continuity/HANDOFF.json
+.artifacts/
+design-qa.md
+
+# Editor, OS and private local files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+*.pem
+*.key
+*.p12
+*.pfx
+progreso-*.json
+educalibre-progreso-*.json

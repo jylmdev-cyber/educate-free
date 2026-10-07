@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "task": "EDU-007",
+  "level": "MEDIUM",
+  "status": "IMPLEMENTATION",
+  "analyzed_at": "2026-10-07T18:05:10.582630+00:00",
+  "factors": [
+    "Initial source inclusion/privacy/size",
+    "CI output paths and Pages base",
+    "Truthful README/license/badges"
+  ],
+  "required_gates": [
+    "DOC_REVIEW",
+    "REPOSITORY_HYGIENE",
+    "WORKFLOW_CHECK",
+    "APP_GATES",
+    "SOURCE_INTEGRITY",
+    "GIT_AUTHORSHIP"
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "rules": [
+    {
+      "id": "ai_rag",
+      "keywords": [
+        "rag",
+        "mcp",
+        "vector",
+        "agente de ia",
+        "ai agent"
+      ],
+      "agents": [
+        "ai_solution_architect",
+        "rag_engineer",
+        "ai_evaluation_engineer",
+        "ai_red_team_reviewer"
+      ],
+      "skills": [
+        "rag_expert",
+        "mcp_expert",
+        "llm_evaluation_expert",
+        "prompt_security_expert",
+        "tool_calling_expert"
+      ]
+    },
+    {
+      "id": "cloud_kubernetes",
+      "keywords": [
+        "kubernetes",
+        "helm",
+        "argocd",
+        "cloud native"
+      ],
+      "agents": [
+        "cloud_architect",
+        "platform_engineer",
+        "kubernetes_engineer",
+        "infrastructure_security_reviewer"
+      ],
+      "skills": [
+        "kubernetes_expert",
+        "helm_expert",
+        "terraform_expert",
+        "argocd_expert"
+      ]
+    },
+    {
+      "id": "cloud_provider",
+      "keywords": [
+        "aws",
+        "azure",
+        "gcp",
+        "cloud"
+      ],
+      "agents": [
+        "cloud_architect",
+        "finops_analyst",
+        "infrastructure_security_reviewer"
+      ],
+      "skills": [
+        "cloud_cost_optimization_expert",
+        "terraform_expert"
+      ]
+    },
+    {
+      "id": "database_migration",
+      "keywords": [
+        "database",
+        "migration",
+        "postgresql",
+        "schema"
+      ],
+      "agents": [
+        "database_engineer",
+        "migration_safety_reviewer",
+        "rollback_readiness_reviewer"
+      ],
+      "skills": [
+        "postgresql_expert",
+        "migration_safety_expert",
+        "rollback_strategy_expert"
+      ]
+    },
+    {
+      "id": "django_auth",
+      "keywords": [
+        "django",
+        "login",
+        "roles",
+        "auth"
+      ],
+      "agents": [
+        "backend_engineer",
+        "security_architect",
+        "qa_engineer"
+      ],
+      "skills": [
+        "django_expert",
+        "application_security_expert",
+        "testing_strategy_expert"
+      ]
+    },
+    {
+      "id": "event_driven",
+      "keywords": [
+        "kafka",
+        "rabbitmq",
+        "event",
+        "evento",
+        "event driven",
+        "eventos"
+      ],
+      "agents": [
+        "distributed_systems_architect",
+        "event_contract_reviewer",
+        "resilience_engineer"
+      ],
+      "skills": [
+        "event_driven_architecture_expert",
+        "idempotency_expert",
+        "outbox_pattern_expert"
+      ]
+    },
+    {
+      "id": "incident",
+      "keywords": [
+        "incident",
+        "outage",
+        "production"
+      ],
+      "agents": [
+        "sre_engineer",
+        "observability_engineer",
+        "rollback_readiness_reviewer"
+      ],
+      "skills": [
+        "observability_expert",
+        "rollback_strategy_expert",
+        "risk_analysis_expert"
+      ]
+    },
+    {
+      "id": "inventory_consistency",
+      "keywords": [
+        "inventory",
+        "inventario",
+        "stock"
+      ],
+      "agents": [
+        "inventory_consistency_reviewer",
+        "database_reliability_engineer",
+        "qa_engineer"
+      ],
+      "skills": [
+        "data_modeling_expert",
+        "accounting_domain_expert",
+        "idempotency_expert"
+      ]
+    },
+    {
+      "id": "mobile",
+      "keywords": [
+        "flutter",
+        "react native",
+        "swiftui",
+        "android",
+        "mobile"
+      ],
+      "agents": [
+        "mobile_architect",
+        "mobile_qa_engineer",
+        "identity_access_engineer"
+      ],
+      "skills": [
+        "mobile_offline_sync_expert",
+        "mobile_security_expert"
+      ]
+    },
+    {
+      "id": "nextjs_react",
+      "keywords": [
+        "nextjs",
+        "next.js",
+        "react"
+      ],
+      "agents": [
+        "web_platform_engineer",
+        "frontend_engineer",
+        "identity_access_engineer",
+        "qa_engineer"
+      ],
+      "skills": [
+        "nextjs_expert",
+        "react_expert",
+        "openid_connect_expert",
+        "playwright_expert"
+      ]
+    },
+    {
+      "id": "nuxt_feature",
+      "keywords": [
+        "nuxt",
+        "vue",
+        "frontend"
+      ],
+      "agents": [
+        "frontend_engineer",
+        "ux_ui_designer",
+        "qa_engineer"
+      ],
+      "skills": [
+        "nuxt_expert",
+        "typescript_expert",
+        "frontend_accessibility_expert"
+      ]
+    },
+    {
+      "id": "payments",
+      "keywords": [
+        "payment",
+        "pago",
+        "fintech",
+        "ledger"
+      ],
+      "agents": [
+        "payments_domain_reviewer",
+        "security_architect",
+        "database_reliability_engineer"
+      ],
+      "skills": [
+        "fintech_domain_expert",
+        "accounting_domain_expert",
+        "idempotency_expert"
+      ]
+    },
+    {
+      "id": "privacy",
+      "keywords": [
+        "privacy",
+        "privacidad",
+        "pii",
+        "healthcare",
+        "salud",
+        "patient",
+        "paciente"
+      ],
+      "agents": [
+        "data_privacy_reviewer",
+        "security_architect"
+      ],
+      "skills": [
+        "data_privacy_expert",
+        "healthcare_domain_expert"
+      ]
+    },
+    {
+      "id": "provider_switch",
+      "keywords": [
+        "provider",
+        "handoff",
+        "continuity"
+      ],
+      "agents": [
+        "continuity_manager",
+        "context_manager",
+        "framework_maintainer"
+      ],
+      "skills": [
+        "context_management_expert",
+        "evidence_validation_expert"
+      ]
+    },
+    {
+      "id": "restobar",
+      "keywords": [
+        "restobar",
+        "pos",
+        "restaurant"
+      ],
+      "agents": [
+        "product_manager",
+        "software_architect",
+        "erp_domain_expert",
+        "backend_engineer",
+        "frontend_engineer"
+      ],
+      "skills": [
+        "erp_domain_expert",
+        "task_graph_expert",
+        "risk_analysis_expert"
+      ]
+    },
+    {
+      "id": "security_fix",
+      "keywords": [
+        "security",
+        "vulnerability",
+        "authorization"
+      ],
+      "agents": [
+        "security_architect",
+        "adversarial_reviewer",
+        "qa_engineer"
+      ],
+      "skills": [
+        "application_security_expert",
+        "adversarial_review_expert",
+        "testing_strategy_expert"
+      ]
+    },
+    {
+      "id": "spring_java",
+      "keywords": [
+        "spring boot",
+        "spring",
+        "java"
+      ],
+      "agents": [
+        "backend_engineer",
+        "software_architect",
+        "identity_access_engineer"
+      ],
+      "skills": [
+        "spring_boot_expert",
+        "openid_connect_expert",
+        "testing_strategy_expert"
+      ]
+    }
+  ]
+}

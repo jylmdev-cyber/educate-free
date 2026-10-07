@@ -1,0 +1,23 @@
+* text=auto
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+.pallaquino/.githooks/* text eol=lf
+*.cmd text eol=crlf
+*.png binary
+*.jpg binary
+*.zip binary
+
+# Preserve historical framework EOFs and Markdown source spacing without rewriting them.
+.pallaquino/** whitespace=-blank-at-eof
+src/index.css whitespace=-blank-at-eof
+investigacion/catalogo.md whitespace=-blank-at-eol
