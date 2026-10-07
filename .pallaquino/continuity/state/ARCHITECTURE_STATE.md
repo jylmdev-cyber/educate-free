@@ -1,5 +1,13 @@
 # ARCHITECTURE_STATE
 
+Arquitectura estática React/HashRouter/Zustand/Radix intacta. Se centralizan tokens CSS de color y tipografía; SVG y Recharts consumen variables compartidas. Font WOFF2 local procesada por Vite, sin CDN en ejecución ni cambios funcionales.
+
+Updated 2026-10-07T21:31:55.676495+00:00.
+
+## Historical snapshot (superseded where noted)
+
+# ARCHITECTURE_STATE
+
 EDU-007 no cambia arquitectura React/Radix ni persistencia. Agrega documentación y scanner de candidatos Git. E2E escribe .artifacts/e2e; CI adjunta resultados sin mezclar continuidad local. Src, catálogo runtime y PROMPT intactos.
 
 Updated 2026-10-07T18:38:13.352347+00:00. codex-root.

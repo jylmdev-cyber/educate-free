@@ -1,5 +1,13 @@
 # EXTERNAL_DEPENDENCIES
 
+Sin dependencia npm adicional ni CDN de fuentes en ejecución. WOFF2 descargadas de Google Fonts y licencia oficial del repositorio google/fonts; procedencia y SHA256 en EDU-009/font-provenance.json. GitHub/CI/Pages continúan existentes.
+
+Updated 2026-10-07T21:31:55.676495+00:00.
+
+## Historical snapshot (superseded where noted)
+
+# EXTERNAL_DEPENDENCIES
+
 EDU-007 no añade paquetes. npm ci comprobado. Fuentes GitHub/Shields/npm oficiales consultadas; ocho action pins resuelven. GitHub CLI instalado, autenticación no ejercida, remoto ninguno. npm lock-only opcional falló EALLOWREMOTE; no se cambió política global ni se abrió allow-remote.
 
 Updated 2026-10-07T18:38:13.352347+00:00. codex-root.

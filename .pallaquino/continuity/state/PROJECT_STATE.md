@@ -1,5 +1,13 @@
 # PROJECT_STATE
 
+Fuente en jylmdev-cyber/educate-free. Renovación visual revisable en feat/color-typography. Usuario habilitó ENABLE_PAGES_DEPLOY=true según captura; main puede publicar. Esta tarea no fusiona ni despliega.
+
+Updated 2026-10-07T21:31:55.676495+00:00.
+
+## Historical snapshot (superseded where noted)
+
+# PROJECT_STATE
+
 Fuente en https://github.com/jylmdev-cyber/educate-free, branch main. README detallado con badges stack/CI real y clone correcto. Pages desactivado; publicación requiere configuración y ENABLE_PAGES_DEPLOY=true. Sin demo pública verificada.
 
 Updated 2026-10-07T20:33:38.742186+00:00.

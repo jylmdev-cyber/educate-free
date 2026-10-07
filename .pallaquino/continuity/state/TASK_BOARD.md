@@ -1,5 +1,13 @@
 # TASK_BOARD
 
+EDU-009-I/G/H COMPLETE_LOCAL. Cinco vistas, menús/fichas/gráficos coherentes; pruebas proporcionales PASS. Revisión remota y checkpoint se registran en HANDOFF local.
+
+Updated 2026-10-07T21:31:55.676495+00:00.
+
+## Historical snapshot (superseded where noted)
+
+# TASK_BOARD
+
 EDU-008-I/G/H COMPLETE_SOURCE. Subida main comprobada. CI se ejecuta automáticamente; resultado final en evidencia local. Publicación Pages fuera del alcance autorizado.
 
 Updated 2026-10-07T20:33:38.742186+00:00.
