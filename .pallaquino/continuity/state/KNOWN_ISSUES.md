@@ -1,5 +1,13 @@
 # KNOWN_ISSUES
 
+Sin fallo pendiente del producto en este alcance. npm ci inicial chocó con DLL abierta por preview; detener proceso identificado permitió instalar y restaurar preview. EALLOWREMOTE de lock-only opcional conservado; innecesario para nuevo script y no altera deps. Firma temporal en captura y whitespace histórico tratados sin modificar app/catalog.
+
+Updated 2026-10-07T18:38:13.352347+00:00. codex-root.
+
+## Historical snapshot (superseded where noted)
+
+# KNOWN_ISSUES
+
 EDU-006: sin fallo pendiente en alcance local. Fallos iniciales de test móvil por no esperar foco corregidos mediante assertions de foco; logs conservados. Safari/dispositivo físico/lector OS/zoom real sin validar. Publicación previa sigue pendiente de destino.
 
 Updated 2026-10-07T17:39:13.733364+00:00. codex-root.

@@ -1,5 +1,13 @@
 # ARCHITECTURE_STATE
 
+EDU-007 no cambia arquitectura React/Radix ni persistencia. Agrega documentación y scanner de candidatos Git. E2E escribe .artifacts/e2e; CI adjunta resultados sin mezclar continuidad local. Src, catálogo runtime y PROMPT intactos.
+
+Updated 2026-10-07T18:38:13.352347+00:00. codex-root.
+
+## Historical snapshot (superseded where noted)
+
+# ARCHITECTURE_STATE
+
 Estado vigente EDU-006: SelectField reemplaza NativeSelect; React controlado y Radix portal/keyboard/foco. Variantes field/capsule; valor vacío mapeado a sentinel; botón quitar separado. Filtros, sort, rutas/fichas usan el componente. Datos/store/progress intactos. Las notas históricas de NativeSelect están superadas.
 
 Updated 2026-10-07T17:39:13.733364+00:00. codex-root.

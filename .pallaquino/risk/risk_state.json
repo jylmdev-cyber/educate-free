@@ -2,7 +2,7 @@
   "schema_version": 1,
   "task": "EDU-007",
   "level": "MEDIUM",
-  "status": "IMPLEMENTATION",
+  "status": "MITIGATED_SCOPED",
   "analyzed_at": "2026-10-07T18:05:10.582630+00:00",
   "factors": [
     "Initial source inclusion/privacy/size",
@@ -16,5 +16,13 @@
     "APP_GATES",
     "SOURCE_INTEGRITY",
     "GIT_AUTHORSHIP"
+  ],
+  "completed_at": "2026-10-07T18:38:13.352347+00:00",
+  "evidence": ".pallaquino/evidence/EDU-007/final-validation.json",
+  "residual": [
+    "Remote GitHub Actions/Pages not executed",
+    "Product license not selected",
+    "Pattern scan is scoped, not exhaustive",
+    "Physical devices/Safari/OS screen reader remain unverified"
   ]
 }

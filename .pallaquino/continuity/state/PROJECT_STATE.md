@@ -1,5 +1,13 @@
 # PROJECT_STATE
 
+EDU-007: fuente lista para repositorio GitHub; README detallado/badges/captura, DEPLOYMENT/VALIDATION/CONTRIBUTING, plantillas y Dependabot. Git main local, sin remoto. Sitio sigue estático con Pages configurado; publicación no realizada.
+
+Updated 2026-10-07T18:38:13.352347+00:00. codex-root.
+
+## Historical snapshot (superseded where noted)
+
+# PROJECT_STATE
+
 EDU-006 completo local. Opción 2 implementada en la SPA existente; controles modernos, cápsulas activas y eliminación individual, menús con iconos/check/foco, adaptación móvil. Informe, 95 ofertas y persistencia conservados.
 
 Updated 2026-10-07T17:39:13.733364+00:00. codex-root.

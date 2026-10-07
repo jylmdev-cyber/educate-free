@@ -1,5 +1,13 @@
 # EXTERNAL_DEPENDENCIES
 
+EDU-007 no añade paquetes. npm ci comprobado. Fuentes GitHub/Shields/npm oficiales consultadas; ocho action pins resuelven. GitHub CLI instalado, autenticación no ejercida, remoto ninguno. npm lock-only opcional falló EALLOWREMOTE; no se cambió política global ni se abrió allow-remote.
+
+Updated 2026-10-07T18:38:13.352347+00:00. codex-root.
+
+## Historical snapshot (superseded where noted)
+
+# EXTERNAL_DEPENDENCIES
+
 EDU-006 añade @radix-ui/react-select 2.3.8 exacto, MIT, React19 compatible, fuentes npm/docs oficiales verificadas y registradas. Audit producción 0 reportadas; delta bundle global 18.85kB gzip. Chrome instalado para E2E; IAB para comparación visual.
 
 Updated 2026-10-07T17:39:13.733364+00:00. codex-root.

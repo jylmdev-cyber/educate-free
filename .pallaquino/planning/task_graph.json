@@ -701,7 +701,11 @@
         "SOURCE_INTEGRITY",
         "GIT_AUTHORSHIP"
       ],
-      "status": "IN_PROGRESS"
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T18:38:13.352347+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-007/final-validation.json"
+      ]
     },
     {
       "id": "EDU-007-G",
@@ -763,7 +767,11 @@
         "SOURCE_INTEGRITY",
         "GIT_AUTHORSHIP"
       ],
-      "status": "PLANNED"
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T18:38:13.352347+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-007/final-validation.json"
+      ]
     },
     {
       "id": "EDU-007-H",
@@ -825,7 +833,11 @@
         "SOURCE_INTEGRITY",
         "GIT_AUTHORSHIP"
       ],
-      "status": "PLANNED"
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T18:38:13.352347+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-007/final-validation.json"
+      ]
     }
   ]
 }

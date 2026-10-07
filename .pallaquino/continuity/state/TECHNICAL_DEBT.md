@@ -1,5 +1,13 @@
 # TECHNICAL_DEBT
 
+Mantener badges/versiones sincronizados al actualizar dependencias. Badge CI/demo dinámicos requieren destino real. Scanner es acotado; ampliar revisión de secretos cuando se incorporen integraciones. Cobertura física/Safari pendiente del alcance de UI anterior.
+
+Updated 2026-10-07T18:38:13.352347+00:00. codex-root.
+
+## Historical snapshot (superseded where noted)
+
+# TECHNICAL_DEBT
+
 EDU-006 resuelve limitación visual del popup nativo. Mantener revisión de dependencia y ampliar cobertura Safari/dispositivos/lector real cuando proceda. No certificado de accesibilidad integral.
 
 Updated 2026-10-07T17:39:13.733364+00:00. codex-root.

@@ -1,5 +1,13 @@
 # ASSUMPTIONS
 
+MAINTENANCE/STANDARD inferido. Preparar todo autoriza inicialización/commits Git locales reversibles; no supone creación de remoto ni push. Se conserva identidad EducaLibre y se presenta bajo raíz PALLAQUINO en README. Licencia del producto no inferida de la MIT del framework.
+
+Updated 2026-10-07T18:38:13.352347+00:00. codex-root.
+
+## Historical snapshot (superseded where noted)
+
+# ASSUMPTIONS
+
 EDU-006 MAINTENANCE/STANDARD inferido; selección textual 2 resuelta al manifiesto/display_order2 y SHA256. Mantener identidad/hero/datos; alcance filtros/select. Sin nuevos activos raster ni subagentes.
 
 Updated 2026-10-07T17:39:13.733364+00:00. codex-root.
