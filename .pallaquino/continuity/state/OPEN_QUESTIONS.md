@@ -1,5 +1,13 @@
 # OPEN_QUESTIONS
 
+Destino/visibilidad y autenticación resueltos: jylmdev-cyber/educate-free público. Licencia del producto pendiente. Publicación Pages no autorizada en esta subida de código; resultado final de CI registrado en checkpoint local.
+
+Updated 2026-10-07T20:33:38.742186+00:00.
+
+## Historical snapshot (superseded where noted)
+
+# OPEN_QUESTIONS
+
 Destino GitHub OWNER/REPO y visibilidad aún no suministrados. Licencia del producto pendiente de preferencia opcional preguntada; se documenta, sin LICENSE principal ni badge MIT. No bloquea preparación local; condiciona publicación/reutilización.
 
 Updated 2026-10-07T18:38:13.352347+00:00. codex-root.

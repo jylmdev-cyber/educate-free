@@ -877,7 +877,11 @@
         "GIT_AUTHORSHIP",
         "REMOTE_HEAD"
       ],
-      "status": "IN_PROGRESS"
+      "status": "COMPLETE_SOURCE",
+      "completed_at": "2026-10-07T20:33:38.742186+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-008/source-publication.json"
+      ]
     },
     {
       "id": "EDU-008-G",
@@ -917,7 +921,11 @@
         "GIT_AUTHORSHIP",
         "REMOTE_HEAD"
       ],
-      "status": "PLANNED"
+      "status": "COMPLETE_SOURCE",
+      "completed_at": "2026-10-07T20:33:38.742186+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-008/source-publication.json"
+      ]
     },
     {
       "id": "EDU-008-H",
@@ -957,7 +965,11 @@
         "GIT_AUTHORSHIP",
         "REMOTE_HEAD"
       ],
-      "status": "PLANNED"
+      "status": "COMPLETE_SOURCE",
+      "completed_at": "2026-10-07T20:33:38.742186+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-008/source-publication.json"
+      ]
     }
   ]
 }

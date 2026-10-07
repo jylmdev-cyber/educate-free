@@ -1,5 +1,13 @@
 # PROJECT_STATE
 
+Fuente en https://github.com/jylmdev-cyber/educate-free, branch main. README detallado con badges stack/CI real y clone correcto. Pages desactivado; publicación requiere configuración y ENABLE_PAGES_DEPLOY=true. Sin demo pública verificada.
+
+Updated 2026-10-07T20:33:38.742186+00:00.
+
+## Historical snapshot (superseded where noted)
+
+# PROJECT_STATE
+
 EDU-007: fuente lista para repositorio GitHub; README detallado/badges/captura, DEPLOYMENT/VALIDATION/CONTRIBUTING, plantillas y Dependabot. Git main local, sin remoto. Sitio sigue estático con Pages configurado; publicación no realizada.
 
 Updated 2026-10-07T18:38:13.352347+00:00. codex-root.

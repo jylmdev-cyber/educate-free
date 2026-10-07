@@ -1,5 +1,13 @@
 # TEST_STATUS
 
+EDU-008: docs/YAML/permisos/guard Pages, 20 enlaces relativos, 27 hashes protegidos, repo:check, diff y autoría PASS. App sin cambios: evidencia previa EDU-007 (15 Vitest, 4 Python, 20 E2E) conservada, no repetida localmente. Push PASS y HEAD remoto coincide. CI remoto iniciado; conclusión final consultable en Actions y checkpoint local.
+
+Updated 2026-10-07T20:33:38.742186+00:00.
+
+## Historical snapshot (superseded where noted)
+
+# TEST_STATUS
+
 EDU-007: npm ci, repo:check, data, types, lint, 15 Vitest, 4 Python, build, audit producción 0 y 20 E2E PASS. Salidas por defecto .artifacts/e2e comprobadas. YAML/condiciones/permisos/artefactos y ocho SHA oficiales PASS; builds /, /otro-repo/, /educate-free/ con assets existentes. Scanner prueba limpio/credencial ficticia/.env bloqueados sin valores. 25 hashes protegidos intactos; fuentes.json saneado deliberadamente. Remoto no ejecutado; no certificación integral.
 
 Updated 2026-10-07T18:38:13.352347+00:00. codex-root.
