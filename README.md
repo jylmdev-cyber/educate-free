@@ -28,7 +28,7 @@ Plataforma de formación gratuita para explorar oportunidades de Perú y el mund
 
 ---
 
-![Catálogo EducaLibre con filtros en cápsulas y menú de áreas](docs/images/catalogo.png)
+![Catálogo EducaLibre con paleta azul tinta y turquesa y tipografía Plus Jakarta Sans](docs/images/catalogo.jpg)
 
 > Captura real de la aplicación local. Los badges de versiones describen el stack instalado; CI muestra el estado del workflow. El badge de Pages indica configuración disponible, no una publicación ya realizada.
 
@@ -52,6 +52,8 @@ Funciona como un sitio estático: la aplicación no necesita un servidor de cuen
 | **Respaldos** | Exportar el progreso e importar un respaldo validado, con resumen previo al reemplazo de datos. |
 
 Los select comparten un componente con menús estilizados, iconos, selección visible, navegación por teclado y adaptación a pantallas estrechas. Los filtros activos se muestran como cápsulas.
+
+La interfaz combina **azul tinta, turquesa y fondos claros**, con **Plus Jakarta Sans** en títulos y controles. La fuente variable se sirve localmente, conserva su licencia y no requiere un CDN de fuentes. Consulta la [paleta y guía de tipografía](docs/DESIGN.md).
 
 ## Datos, alcance y fuentes
 
@@ -79,6 +81,7 @@ Las versiones de esta tabla corresponden a [package.json](package.json); el árb
 | TypeScript | 6.0.3 | Contratos de datos y comprobación estática. |
 | Vite | 8.3.3 | Desarrollo, compilación y configuración de la base de Pages. |
 | Tailwind CSS | 4.3.3 | Estilos, utilidades y tokens junto con CSS propio. |
+| Plus Jakarta Sans | Variable, pesos 200–800 | Tipografía local en WOFF2; Latin y Latin-ext, licencia SIL OFL 1.1. |
 | React Router DOM | 7.18.4 | Navegación con HashRouter para alojamiento estático. |
 | Radix Select / Dialog | 2.3.8 / 1.2.0 | Menús y fichas modales con manejo de foco y teclado. |
 | Zustand | 5.0.15 | Estado personal persistido en localStorage. |

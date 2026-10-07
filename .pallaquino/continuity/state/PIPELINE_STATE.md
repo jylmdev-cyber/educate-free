@@ -1,5 +1,13 @@
 # PIPELINE_STATE
 
+HANDOFF EDU-009: recuperación verificada, capacidades reales, impacto/mapa/DAG/plan/reservas, implementación y gates con evidencia. Publicación productiva pendiente de aprobación explícita.
+
+Updated 2026-10-07T21:31:55.676495+00:00.
+
+## Historical snapshot (superseded where noted)
+
+# PIPELINE_STATE
+
 HANDOFF EDU-008: recuperación, capacidades, impacto, reservas, docs/workflow, gates y push con evidencia. Autenticación humana completada; rechazo de scope workflow resuelto. Consultar HANDOFF/checkpoint local para estado final remoto.
 
 Updated 2026-10-07T20:33:38.742186+00:00.

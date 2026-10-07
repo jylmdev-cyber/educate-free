@@ -1,5 +1,13 @@
 # KNOWN_ISSUES
 
+Sin regresión detectada en gates locales EDU-009. No se probaron dispositivos físicos, Safari ni lectores de pantalla. Fonte fallback/swap puede alterar ajuste temporal. CI remoto y su estado real se registran en checkpoint; no se afirma aprobación remota antes de observarla.
+
+Updated 2026-10-07T21:31:55.676495+00:00.
+
+## Historical snapshot (superseded where noted)
+
+# KNOWN_ISSUES
+
 Sin fallo pendiente del producto en este alcance. npm ci inicial chocó con DLL abierta por preview; detener proceso identificado permitió instalar y restaurar preview. EALLOWREMOTE de lock-only opcional conservado; innecesario para nuevo script y no altera deps. Firma temporal en captura y whitespace histórico tratados sin modificar app/catalog.
 
 Updated 2026-10-07T18:38:13.352347+00:00. codex-root.

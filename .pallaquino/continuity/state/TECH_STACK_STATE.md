@@ -1,5 +1,13 @@
 # TECH_STACK_STATE
 
+React/TypeScript/Vite/Tailwind y paquetes intactos. Plus Jakarta Sans variable 200–800, WOFF2 Latin/Latin-ext 49.076 bytes, con licencia OFL; fallback system-ui y font-display:swap.
+
+Updated 2026-10-07T21:31:55.676495+00:00.
+
+## Historical snapshot (superseded where noted)
+
+# TECH_STACK_STATE
+
 EDU-007 conserva todas las dependencias/versiones. Solo añade script repo:check; package-lock sin cambio de dependencias. Node24.15/npm12.0.2/Python3.11.15/Git2.56/gh2.92 observados. CI Node24/Python3.12; SHA Actions existentes resueltos por API oficial.
 
 Updated 2026-10-07T18:38:13.352347+00:00. codex-root.

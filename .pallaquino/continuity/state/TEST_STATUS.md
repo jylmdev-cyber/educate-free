@@ -1,5 +1,13 @@
 # TEST_STATUS
 
+EDU-009 PASS local: build/TypeScript, lint, 20 E2E existentes, 17 pares de contraste, 16 estados visuales, 35 hashes protegidos, 22 enlaces relativos y fuentes HTTP 200. repo:check/diff/autoría se cierran con commit. Vitest/Python unitarios previos no se repitieron localmente. Resultado CI remoto en checkpoint.
+
+Updated 2026-10-07T21:31:55.676495+00:00.
+
+## Historical snapshot (superseded where noted)
+
+# TEST_STATUS
+
 EDU-008: docs/YAML/permisos/guard Pages, 20 enlaces relativos, 27 hashes protegidos, repo:check, diff y autoría PASS. App sin cambios: evidencia previa EDU-007 (15 Vitest, 4 Python, 20 E2E) conservada, no repetida localmente. Push PASS y HEAD remoto coincide. CI remoto iniciado; conclusión final consultable en Actions y checkpoint local.
 
 Updated 2026-10-07T20:33:38.742186+00:00.

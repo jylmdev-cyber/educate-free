@@ -970,6 +970,168 @@
       "evidence": [
         ".pallaquino/evidence/EDU-008/source-publication.json"
       ]
+    },
+    {
+      "id": "EDU-009-I",
+      "title": "Refresh visual tokens, type and chart colors",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-008-H"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "frontend_accessibility_expert",
+        "evidence_validation_expert"
+      ],
+      "files": [
+        "src/index.css",
+        "src/App.tsx",
+        "src/views/Analytics.tsx",
+        "index.html",
+        "public/favicon.svg",
+        "src/assets/fonts/plus-jakarta-sans-latin.woff2",
+        "src/assets/fonts/plus-jakarta-sans-latin-ext.woff2",
+        "src/assets/fonts/OFL.txt",
+        "docs/DESIGN.md",
+        "README.md",
+        "docs/images/catalogo.png",
+        "docs/images/catalogo.jpg"
+      ],
+      "acceptance_criteria": [
+        "Ink blue/turquoise/ice palette coherent across all five views, menus, dialogs, charts and favicon",
+        "Plus Jakarta Sans variable font served locally with Spanish glyphs, license and fallback; no runtime font CDN",
+        "Contrast AA checks, keyboard/forced-colors retained and no overflow at 320/393/768/1440",
+        "Catalog/progress/workflows/dependencies unchanged; actual proportional gates and rendered screenshots",
+        "Reserved changes, human-authored feature branch, continuity/checkpoint; no production main push"
+      ],
+      "quality_gates": [
+        "SOURCE_INTEGRITY",
+        "FONT_CONTRAST",
+        "BUILD",
+        "LINT",
+        "E2E",
+        "VISUAL_QA"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T21:31:55.676495+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-009/readiness.json"
+      ],
+      "handoff": "Feature branch/PR/checkpoint outcome recorded in local HANDOFF after commit"
+    },
+    {
+      "id": "EDU-009-G",
+      "title": "Verify font, contrast, responsive UI and existing gates",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-009-I"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "frontend_accessibility_expert",
+        "evidence_validation_expert"
+      ],
+      "files": [
+        "src/index.css",
+        "src/App.tsx",
+        "src/views/Analytics.tsx",
+        "index.html",
+        "public/favicon.svg",
+        "src/assets/fonts/plus-jakarta-sans-latin.woff2",
+        "src/assets/fonts/plus-jakarta-sans-latin-ext.woff2",
+        "src/assets/fonts/OFL.txt",
+        "docs/DESIGN.md",
+        "README.md",
+        "docs/images/catalogo.png",
+        "docs/images/catalogo.jpg"
+      ],
+      "acceptance_criteria": [
+        "Ink blue/turquoise/ice palette coherent across all five views, menus, dialogs, charts and favicon",
+        "Plus Jakarta Sans variable font served locally with Spanish glyphs, license and fallback; no runtime font CDN",
+        "Contrast AA checks, keyboard/forced-colors retained and no overflow at 320/393/768/1440",
+        "Catalog/progress/workflows/dependencies unchanged; actual proportional gates and rendered screenshots",
+        "Reserved changes, human-authored feature branch, continuity/checkpoint; no production main push"
+      ],
+      "quality_gates": [
+        "SOURCE_INTEGRITY",
+        "FONT_CONTRAST",
+        "BUILD",
+        "LINT",
+        "E2E",
+        "VISUAL_QA"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T21:31:55.676495+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-009/readiness.json"
+      ],
+      "handoff": "Feature branch/PR/checkpoint outcome recorded in local HANDOFF after commit"
+    },
+    {
+      "id": "EDU-009-H",
+      "title": "Review feature branch and record visual continuity",
+      "domain": "frontend",
+      "dependencies": [
+        "EDU-009-G"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "frontend_accessibility_expert",
+        "evidence_validation_expert"
+      ],
+      "files": [
+        "src/index.css",
+        "src/App.tsx",
+        "src/views/Analytics.tsx",
+        "index.html",
+        "public/favicon.svg",
+        "src/assets/fonts/plus-jakarta-sans-latin.woff2",
+        "src/assets/fonts/plus-jakarta-sans-latin-ext.woff2",
+        "src/assets/fonts/OFL.txt",
+        "docs/DESIGN.md",
+        "README.md",
+        "docs/images/catalogo.png",
+        "docs/images/catalogo.jpg"
+      ],
+      "acceptance_criteria": [
+        "Ink blue/turquoise/ice palette coherent across all five views, menus, dialogs, charts and favicon",
+        "Plus Jakarta Sans variable font served locally with Spanish glyphs, license and fallback; no runtime font CDN",
+        "Contrast AA checks, keyboard/forced-colors retained and no overflow at 320/393/768/1440",
+        "Catalog/progress/workflows/dependencies unchanged; actual proportional gates and rendered screenshots",
+        "Reserved changes, human-authored feature branch, continuity/checkpoint; no production main push"
+      ],
+      "quality_gates": [
+        "SOURCE_INTEGRITY",
+        "FONT_CONTRAST",
+        "BUILD",
+        "LINT",
+        "E2E",
+        "VISUAL_QA"
+      ],
+      "status": "COMPLETE_LOCAL",
+      "completed_at": "2026-10-07T21:31:55.676495+00:00",
+      "evidence": [
+        ".pallaquino/evidence/EDU-009/readiness.json"
+      ],
+      "handoff": "Feature branch/PR/checkpoint outcome recorded in local HANDOFF after commit"
     }
   ]
 }

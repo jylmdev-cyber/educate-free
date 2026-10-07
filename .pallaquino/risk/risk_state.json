@@ -1,25 +1,27 @@
 {
   "schema_version": 1,
-  "task": "EDU-008",
+  "task": "EDU-009",
   "level": "MEDIUM",
-  "status": "MITIGATED_SOURCE",
-  "analyzed_at": "2026-10-07T20:18:29.202520+00:00",
+  "status": "MITIGATED_LOCAL",
+  "analyzed_at": "2026-10-07T21:13:08.212066+00:00",
   "factors": [
-    "Public source push",
-    "Auth state differs between gh and Git",
-    "Prevent unintended Pages deployment"
+    "Font metrics can alter wrapping",
+    "Palette contrast for small text/focus/status/charts",
+    "Vite Pages font paths and license",
+    "main push now deploys automatically"
   ],
   "required_gates": [
-    "DOC_WORKFLOW_CHECK",
     "SOURCE_INTEGRITY",
-    "REPO_CHECK",
-    "GIT_AUTHORSHIP",
-    "REMOTE_HEAD"
+    "FONT_CONTRAST",
+    "BUILD",
+    "LINT",
+    "E2E",
+    "VISUAL_QA"
   ],
-  "completed_at": "2026-10-07T20:33:38.742186+00:00",
+  "completed_at": "2026-10-07T21:31:55.676495+00:00",
   "residual": [
-    "Final remote CI outcome recorded in local checkpoint",
-    "Pages remains disabled; live-site validation outside upload scope",
-    "Product license pending; scoped pattern scan not exhaustive"
+    "Physical devices/Safari/screen readers not tested",
+    "Font swap/fallback can change wrapping",
+    "Main merge deploys Pages; requires explicit approval"
   ]
 }

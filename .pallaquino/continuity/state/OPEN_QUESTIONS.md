@@ -1,5 +1,13 @@
 # OPEN_QUESTIONS
 
+Mejora visual completada localmente. Publicación en Pages al fusionar main requiere aprobación explícita para esta versión. Licencia del producto pendiente; fuente mantiene su propia OFL. No hace falta resolver licencia del producto para revisar la interfaz.
+
+Updated 2026-10-07T21:31:55.676495+00:00.
+
+## Historical snapshot (superseded where noted)
+
+# OPEN_QUESTIONS
+
 Destino/visibilidad y autenticación resueltos: jylmdev-cyber/educate-free público. Licencia del producto pendiente. Publicación Pages no autorizada en esta subida de código; resultado final de CI registrado en checkpoint local.
 
 Updated 2026-10-07T20:33:38.742186+00:00.

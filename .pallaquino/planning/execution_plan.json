@@ -1,33 +1,40 @@
 {
   "schema_version": 1,
-  "task": "EDU-008",
+  "task": "EDU-009",
   "mode": "MAINTENANCE",
   "autonomy": "STANDARD",
   "risk": "MEDIUM",
-  "status": "COMPLETE_SOURCE",
+  "status": "COMPLETE_LOCAL",
   "files": [
+    "src/index.css",
+    "src/App.tsx",
+    "src/views/Analytics.tsx",
+    "index.html",
+    "public/favicon.svg",
+    "src/assets/fonts/plus-jakarta-sans-latin.woff2",
+    "src/assets/fonts/plus-jakarta-sans-latin-ext.woff2",
+    "src/assets/fonts/OFL.txt",
+    "docs/DESIGN.md",
     "README.md",
-    "docs/DEPLOYMENT.md",
-    ".github/workflows/deploy.yml",
-    ".git/config"
+    "docs/images/catalogo.png",
+    "docs/images/catalogo.jpg"
   ],
   "criteria": [
-    "Exact origin target; normal main push, no force/history rewrite",
-    "Real README clone/CI links; no claimed live site",
-    "Deployment requires explicit ENABLE_PAGES_DEPLOY variable; no Pages activation",
-    "Protected source/data/dependencies intact; scanner/docs/YAML/authorship gates",
-    "Remote HEAD matches local and actual CI status recorded; continuity/checkpoint/handoff"
+    "Ink blue/turquoise/ice palette coherent across all five views, menus, dialogs, charts and favicon",
+    "Plus Jakarta Sans variable font served locally with Spanish glyphs, license and fallback; no runtime font CDN",
+    "Contrast AA checks, keyboard/forced-colors retained and no overflow at 320/393/768/1440",
+    "Catalog/progress/workflows/dependencies unchanged; actual proportional gates and rendered screenshots",
+    "Reserved changes, human-authored feature branch, continuity/checkpoint; no production main push"
   ],
   "steps": [
-    "Verify empty destination/current checkpoint",
-    "Reserve docs/workflow/Git config and metadata",
-    "Update known destination/CI badge and opt-in deployment",
-    "Check docs/YAML/scanner/authorship; normal source push",
-    "Record remote head/CI status; close continuity"
+    "Recover checksum/inspect app and styles",
+    "Reserve declared files/update impact/map/graph",
+    "Local licensed font and consistent tokens/type/illustration/charts",
+    "Build/lint/types and existing E2E; visual contrast/font/mobile checks",
+    "Refresh README screenshot/design docs, feature branch and checkpoint"
   ],
-  "production": "Not authorized: keep Pages disabled and guard deploy",
-  "license": "Still pending owner preference",
-  "completed_at": "2026-10-07T20:33:38.742186+00:00",
-  "source_head": "3efd360cf6c48993ece4ab95271297fd0948cc8d",
-  "ci": "Remote validation started; final status recorded separately in local evidence/checkpoint"
+  "production": "No main push: ENABLE_PAGES_DEPLOY now true",
+  "completed_at": "2026-10-07T21:31:55.676495+00:00",
+  "review_branch": "feat/color-typography",
+  "remote_evidence": "Final local HANDOFF/checkpoint records actual PR/CI outcome"
 }
