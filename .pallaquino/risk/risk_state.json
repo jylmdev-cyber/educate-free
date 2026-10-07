@@ -1,28 +1,19 @@
 {
   "schema_version": 1,
-  "task": "EDU-007",
+  "task": "EDU-008",
   "level": "MEDIUM",
-  "status": "MITIGATED_SCOPED",
-  "analyzed_at": "2026-10-07T18:05:10.582630+00:00",
+  "status": "IMPLEMENTATION",
+  "analyzed_at": "2026-10-07T20:18:29.202520+00:00",
   "factors": [
-    "Initial source inclusion/privacy/size",
-    "CI output paths and Pages base",
-    "Truthful README/license/badges"
+    "Public source push",
+    "Auth state differs between gh and Git",
+    "Prevent unintended Pages deployment"
   ],
   "required_gates": [
-    "DOC_REVIEW",
-    "REPOSITORY_HYGIENE",
-    "WORKFLOW_CHECK",
-    "APP_GATES",
+    "DOC_WORKFLOW_CHECK",
     "SOURCE_INTEGRITY",
-    "GIT_AUTHORSHIP"
-  ],
-  "completed_at": "2026-10-07T18:38:13.352347+00:00",
-  "evidence": ".pallaquino/evidence/EDU-007/final-validation.json",
-  "residual": [
-    "Remote GitHub Actions/Pages not executed",
-    "Product license not selected",
-    "Pattern scan is scoped, not exhaustive",
-    "Physical devices/Safari/OS screen reader remain unverified"
+    "REPO_CHECK",
+    "GIT_AUTHORSHIP",
+    "REMOTE_HEAD"
   ]
 }

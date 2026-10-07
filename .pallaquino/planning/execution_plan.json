@@ -1,58 +1,30 @@
 {
   "schema_version": 1,
-  "task": "EDU-007",
+  "task": "EDU-008",
   "mode": "MAINTENANCE",
   "autonomy": "STANDARD",
   "risk": "MEDIUM",
-  "status": "COMPLETE_LOCAL",
+  "status": "IMPLEMENTATION",
   "files": [
     "README.md",
-    ".gitignore",
-    ".gitattributes",
-    ".editorconfig",
-    ".nvmrc",
-    "CONTRIBUTING.md",
-    "LICENSE",
     "docs/DEPLOYMENT.md",
-    "docs/VALIDATION.md",
-    "docs/images/catalogo.png",
     ".github/workflows/deploy.yml",
-    ".github/workflows/radar.yml",
-    ".github/dependabot.yml",
-    ".github/PULL_REQUEST_TEMPLATE.md",
-    ".github/ISSUE_TEMPLATE/bug_report.yml",
-    ".github/ISSUE_TEMPLATE/feature_request.yml",
-    "playwright.config.ts",
-    "tests/e2e/app.spec.ts",
-    "scripts/check-repository.mjs",
-    "package.json",
-    "package-lock.json",
-    ".pallaquino/.githooks/commit-msg",
-    "investigacion/fuentes.json"
+    ".git/config"
   ],
   "criteria": [
-    "Detailed Spanish README with truthful static stack badges and real local screenshot",
-    "Reproducible setup/quality commands and complete Pages/radar instructions without invented destination",
-    "Git main initialized locally with human authorship policy; no remote creation/push",
-    "Ignore dependencies/build/local evidence and scan prospective tracked files without exposing secrets",
-    "CI outputs isolated; gates and workflow checks recorded; application/data unchanged",
-    "Map/DAG/plan/risk/continuity/checkpoint and handoff completed"
+    "Exact origin target; normal main push, no force/history rewrite",
+    "Real README clone/CI links; no claimed live site",
+    "Deployment requires explicit ENABLE_PAGES_DEPLOY variable; no Pages activation",
+    "Protected source/data/dependencies intact; scanner/docs/YAML/authorship gates",
+    "Remote HEAD matches local and actual CI status recorded; continuity/checkpoint/handoff"
   ],
   "steps": [
-    "Review actual repo and official GitHub docs",
-    "Declare/reserve paths and protect application/data",
-    "Detailed README/badges, docs, hygiene and CI evidence paths",
-    "Initialize main/local authorship, scan candidates and validate gates",
-    "Conventional commit, checkpoint/handoff"
+    "Verify empty destination/current checkpoint",
+    "Reserve docs/workflow/Git config and metadata",
+    "Update known destination/CI badge and opt-in deployment",
+    "Check docs/YAML/scanner/authorship; normal source push",
+    "Record remote head/CI status; close continuity"
   ],
-  "remote_actions": "None; repository destination not supplied",
-  "license": "Product license pending optional owner preference; no grant inferred",
-  "scope_amendment": {
-    "timestamp": "2026-10-07T18:22:51.352172+00:00",
-    "reason": "Repository scan found an expired presigned public-source URL; retain original locally and remove temporary query capability before versioning",
-    "baseline": "Local ignored baseline/workspace/investigacion/fuentes.json",
-    "path": "investigacion/fuentes.json"
-  },
-  "completed_at": "2026-10-07T18:38:13.352347+00:00",
-  "evidence": ".pallaquino/evidence/EDU-007/final-validation.json"
+  "production": "Not authorized: keep Pages disabled and guard deploy",
+  "license": "Still pending owner preference"
 }

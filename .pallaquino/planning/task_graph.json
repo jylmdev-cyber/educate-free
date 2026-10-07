@@ -838,6 +838,126 @@
       "evidence": [
         ".pallaquino/evidence/EDU-007/final-validation.json"
       ]
+    },
+    {
+      "id": "EDU-008-I",
+      "title": "Connect destination and document opt-in deployment",
+      "domain": "release",
+      "dependencies": [
+        "EDU-007-H"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "git_release_expert",
+        "github_actions_expert"
+      ],
+      "files": [
+        "README.md",
+        "docs/DEPLOYMENT.md",
+        ".github/workflows/deploy.yml",
+        ".git/config"
+      ],
+      "acceptance_criteria": [
+        "Exact origin target; normal main push, no force/history rewrite",
+        "Real README clone/CI links; no claimed live site",
+        "Deployment requires explicit ENABLE_PAGES_DEPLOY variable; no Pages activation",
+        "Protected source/data/dependencies intact; scanner/docs/YAML/authorship gates",
+        "Remote HEAD matches local and actual CI status recorded; continuity/checkpoint/handoff"
+      ],
+      "quality_gates": [
+        "DOC_WORKFLOW_CHECK",
+        "SOURCE_INTEGRITY",
+        "REPO_CHECK",
+        "GIT_AUTHORSHIP",
+        "REMOTE_HEAD"
+      ],
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "EDU-008-G",
+      "title": "Push source and verify remote HEAD/CI",
+      "domain": "release",
+      "dependencies": [
+        "EDU-008-I"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "git_release_expert",
+        "github_actions_expert"
+      ],
+      "files": [
+        "README.md",
+        "docs/DEPLOYMENT.md",
+        ".github/workflows/deploy.yml",
+        ".git/config"
+      ],
+      "acceptance_criteria": [
+        "Exact origin target; normal main push, no force/history rewrite",
+        "Real README clone/CI links; no claimed live site",
+        "Deployment requires explicit ENABLE_PAGES_DEPLOY variable; no Pages activation",
+        "Protected source/data/dependencies intact; scanner/docs/YAML/authorship gates",
+        "Remote HEAD matches local and actual CI status recorded; continuity/checkpoint/handoff"
+      ],
+      "quality_gates": [
+        "DOC_WORKFLOW_CHECK",
+        "SOURCE_INTEGRITY",
+        "REPO_CHECK",
+        "GIT_AUTHORSHIP",
+        "REMOTE_HEAD"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "id": "EDU-008-H",
+      "title": "Record publication evidence and continuity",
+      "domain": "release",
+      "dependencies": [
+        "EDU-008-G"
+      ],
+      "blocked_by": [],
+      "parallelizable": false,
+      "priority": "P2",
+      "risk": "MEDIUM",
+      "agents": [
+        "codex-root"
+      ],
+      "skills": [
+        "git_release_expert",
+        "github_actions_expert"
+      ],
+      "files": [
+        "README.md",
+        "docs/DEPLOYMENT.md",
+        ".github/workflows/deploy.yml",
+        ".git/config"
+      ],
+      "acceptance_criteria": [
+        "Exact origin target; normal main push, no force/history rewrite",
+        "Real README clone/CI links; no claimed live site",
+        "Deployment requires explicit ENABLE_PAGES_DEPLOY variable; no Pages activation",
+        "Protected source/data/dependencies intact; scanner/docs/YAML/authorship gates",
+        "Remote HEAD matches local and actual CI status recorded; continuity/checkpoint/handoff"
+      ],
+      "quality_gates": [
+        "DOC_WORKFLOW_CHECK",
+        "SOURCE_INTEGRITY",
+        "REPO_CHECK",
+        "GIT_AUTHORSHIP",
+        "REMOTE_HEAD"
+      ],
+      "status": "PLANNED"
     }
   ]
 }

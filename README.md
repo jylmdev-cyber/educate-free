@@ -18,6 +18,8 @@ Plataforma de formación gratuita para explorar oportunidades de Perú y el mund
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-configurado-222222?style=flat-square&logo=githubpages&logoColor=white)](docs/DEPLOYMENT.md)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 
+[![Validación CI](https://github.com/jylmdev-cyber/educate-free/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/jylmdev-cyber/educate-free/actions/workflows/deploy.yml)
+
 **95 oportunidades · 15 recomendaciones · 4 rutas iniciales · 20 instituciones**
 
 [Inicio rápido](#inicio-rápido) · [Stack](#stack-tecnológico) · [Publicación](docs/DEPLOYMENT.md) · [Contribuir](CONTRIBUTING.md)
@@ -28,7 +30,9 @@ Plataforma de formación gratuita para explorar oportunidades de Perú y el mund
 
 ![Catálogo EducaLibre con filtros en cápsulas y menú de áreas](docs/images/catalogo.png)
 
-> Captura real de la aplicación local. Los badges de versiones describen el stack instalado; el badge de Pages indica configuración disponible, no una publicación ya realizada. El repositorio remoto y su URL se definirán al subir el proyecto.
+> Captura real de la aplicación local. Los badges de versiones describen el stack instalado; CI muestra el estado del workflow. El badge de Pages indica configuración disponible, no una publicación ya realizada.
+
+**[Repositorio](https://github.com/jylmdev-cyber/educate-free) · [Validación en GitHub Actions](https://github.com/jylmdev-cyber/educate-free/actions/workflows/deploy.yml)**. El enlace de demo se añadirá cuando Pages se publique y se compruebe.
 
 ## Qué es EducaLibre
 
@@ -120,16 +124,14 @@ npm run dev
 
 Abre **http://127.0.0.1:5173/**. El servidor se enlaza a localhost.
 
-Después de crear el repositorio remoto puedes obtener una copia con:
+Puedes obtener una copia del repositorio con:
 
 ```sh
-git clone https://github.com/OWNER/REPO.git
-cd REPO
+git clone https://github.com/jylmdev-cyber/educate-free.git
+cd educate-free
 npm ci
 npm run dev
 ```
-
-Sustituye OWNER y REPO por tu destino real.
 
 ### Compilar y previsualizar
 
@@ -258,10 +260,11 @@ La guía completa está en **[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)**: primer 
 1. Crea un repositorio vacío en tu cuenta u organización.
 2. Conecta el remoto y sube la rama main con los pasos de la guía.
 3. En **Settings → Pages → Build and deployment → Source**, elige **GitHub Actions**.
-4. Ejecuta el workflow **Validate and deploy EducaLibre** si el primer push ocurrió antes de habilitar Pages.
-5. Revisa el job deploy y su URL de salida. Esa será la URL publicada real.
+4. En **Settings → Secrets and variables → Actions → Variables**, crea **ENABLE_PAGES_DEPLOY** con valor **true** para habilitar la publicación.
+5. Ejecuta el workflow **Validate and deploy EducaLibre** si el primer push ocurrió antes de habilitar Pages.
+6. Revisa el job deploy y su URL de salida. Esa será la URL publicada real.
 
-El workflow valida datos, tipos, lint, Vitest, Python, auditoría y E2E antes de publicar **solo dist/**. Los PR se validan y no despliegan. Las acciones están fijadas por SHA.
+El workflow valida datos, tipos, lint, Vitest, Python, auditoría y E2E en cada push a main y en los PR. Publica **solo dist/** cuando **ENABLE_PAGES_DEPLOY=true**, desde main y fuera de eventos de PR. Sin esa variable, se ejecuta únicamente la validación. Las acciones están fijadas por SHA.
 
 El prefijo se obtiene del nombre del repositorio. Para OWNER.github.io o un dominio propio, establece la variable de repositorio **PAGES_BASE=/**. Para un proyecto, usa **/REPO/**. Véase la [documentación oficial de workflows de Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 

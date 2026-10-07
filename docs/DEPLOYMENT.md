@@ -1,6 +1,8 @@
 # Subir EducaLibre a GitHub y publicar en Pages
 
-Esta guía prepara la publicación del código y del sitio estático. No contiene una URL de destino asumida. Sustituye `OWNER` y `REPO` por tu cuenta/organización y el nombre real del repositorio.
+Esta guía prepara la publicación del código y del sitio estático. El destino es [jylmdev-cyber/educate-free](https://github.com/jylmdev-cyber/educate-free). Los ejemplos reutilizables usan `OWNER` y `REPO`: sustitúyelos por tu cuenta/organización y el nombre real del repositorio.
+
+Subir código a `main` inicia la validación de CI. Para publicar el sitio se necesita habilitar Pages y establecer explícitamente `ENABLE_PAGES_DEPLOY=true`.
 
 ## 1. Revisar la entrega local
 
@@ -42,12 +44,15 @@ Ese comando **crea un repositorio público y sube código**; úsalo solo despué
 
 1. Abre **Settings → Pages → Build and deployment**.
 2. En **Source**, selecciona **GitHub Actions**.
-3. Abre **Actions → Validate and deploy EducaLibre**.
-4. Ejecuta **Run workflow** sobre `main` si el primer push ocurrió antes de activar Pages.
-5. Espera que `validate` y `deploy` terminen correctamente.
-6. Abre la URL de salida del job `deploy` / entorno `github-pages`.
+3. En **Settings → Secrets and variables → Actions → Variables**, crea la variable **ENABLE_PAGES_DEPLOY** con valor **true**.
+4. Abre **Actions → Validate and deploy EducaLibre**.
+5. Ejecuta **Run workflow** sobre `main` si el primer push ocurrió antes de activar Pages.
+6. Espera que `validate` y `deploy` terminen correctamente.
+7. Abre la URL de salida del job `deploy` / entorno `github-pages`.
 
-El [workflow](../.github/workflows/deploy.yml) tiene lectura de contenido por defecto. Solo el job de despliegue recibe `pages: write` e `id-token: write`. Publica únicamente `dist/` después de los controles; los pull requests validan sin desplegar. Configuración según la [guía oficial de workflows de Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+Si la variable está ausente o tiene otro valor, CI valida el código y omite el despliegue.
+
+El [workflow](../.github/workflows/deploy.yml) tiene lectura de contenido por defecto. Solo el job de despliegue recibe `pages: write` e `id-token: write`. Publica únicamente `dist/` después de los controles cuando se habilita la variable; los pull requests validan sin desplegar. Configuración según la [guía oficial de workflows de Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
 ## 4. Configurar la base del sitio
 
@@ -92,7 +97,7 @@ El monitor no confirma matrícula, costos ni cupos y no modifica el informe. Man
 
 ## Badges de CI y demo
 
-Los badges del README son estáticos y muestran versiones/configuración. Cuando exista el destino real, puedes añadir un badge dinámico del workflow:
+El README incluye badges estáticos de versiones/configuración y un badge dinámico del workflow con el destino real. Para reutilizarlo en otro repositorio:
 
 ```markdown
 [![Validación](https://github.com/OWNER/REPO/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/OWNER/REPO/actions/workflows/deploy.yml)
