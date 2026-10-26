@@ -1,5 +1,257 @@
 {
   "version": 1,
-  "checked_at": null,
-  "checks": []
+  "checked_at": "2026-10-26T19:01:25.016105+00:00",
+  "checks": [
+    {
+      "id": "watch-1",
+      "institution": "UNI PIT",
+      "url": "https://cursosgratuitos.uni.edu.pe/programapit/pit-uni-2026.php",
+      "checked_at": "2026-10-26T19:01:20.071948+00:00",
+      "state": "baseline",
+      "fingerprint": "09cec07b206337f90cee62991b06d347aede4e720bae3c73bcbc83598612dd51",
+      "snippets": [
+        "PIT UNI - Inscripciones 2026 Ir a ingresar PIT UNI Inscripción y certificados Ayuda Certificados Inscríbete Programa de Iniciación Tecnológica · UNI Cursos gratu",
+        "PIT UNI - Inscripciones 2026 Ir a ingresar PIT UNI Inscripción y certificados Ayuda Certificados Inscríbete Programa de Iniciación Tecnológica · UNI Cursos gratuitos. Primero te identificamos aquí. En e",
+        "rtificados Inscríbete Programa de Iniciación Tecnológica · UNI Cursos gratuitos. Primero te identificamos aquí. En esta página te inscribes, consultas tu registro y ves tus certificados. Las clases se llevan en el Aul"
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-2",
+      "institution": "MTPE CAPACÍTA-T",
+      "url": "https://capacitacionlaboral.trabajo.gob.pe/cursos/",
+      "checked_at": "2026-10-26T19:01:20.072874+00:00",
+      "state": "baseline",
+      "fingerprint": "2b79fe341a7d9bf4c04edb91a0879de76bae702074903dddc59c2f77f87eb0c3",
+      "snippets": [
+        "Cursos » CAPACÍTA-T Inicio Capacitación Rutas Formativas Cursos Preguntas Frecuentes Inicio Capacitación Rutas Formativas Cursos Preguntas Frecuentes Explora todos los cursos Filt",
+        "icio Capacitación Rutas Formativas Cursos Preguntas Frecuentes Inicio Capacitación Rutas Formativas Cursos Preguntas Frecuentes Explora todos los cursos Filtros Borrar todo Mostrando 12 de 214 Buscador Categorías Autoemple",
+        "scador Categorías Autoempleo/emprendimiento Becas Generación Plateada Capacitación laboral Competencias para la empleabilidad Competencias técnicas Entidades BCP Cisco Fundación Romero Huawei del Perú Ministerio de Trabajo"
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-3",
+      "institution": "PCM / Talento Digital",
+      "url": "https://www.gob.pe/institucion/pcm/noticias/1423146-pcm-lanza-cursos-virtuales-gratuitos-de-inteligencia-artificial-programacion-web-y-ciberseguridad-con-certificacion-internacional",
+      "checked_at": "2026-10-26T19:01:20.073484+00:00",
+      "state": "baseline",
+      "fingerprint": "9a72b032245754ccc4a61b3798d02943f9ffbf7d367214ff196f4a9523e70ae6",
+      "snippets": [
+        "PCM lanza cursos virtuales gratuitos de inteligencia artificial, programación web y ciberseguridad con certificación internacional - Noticias - Presidencia del Consejo de Min",
+        "da en gob.pe Inicio El Estado PCM Noticias PCM lanza cursos virtuales gratuitos de inteligencia artificial, programación web y ciberseguridad con cert... Presidencia del Consejo de Ministros PCM lanza cursos virtuales",
+        "rt... Presidencia del Consejo de Ministros PCM lanza cursos virtuales gratuitos de inteligencia artificial, programación web y ciberseguridad con certificación internacional Nota de prensa Estudiantes de secundaria y "
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-4",
+      "institution": "SERVIR / ENAP",
+      "url": "https://www.gob.pe/institucion/servir/campa%C3%B1as/23775-cursos-mooc-2026-de-la-enap-servir-libres-gratuitos-y-certificados",
+      "checked_at": "2026-10-26T19:01:20.074363+00:00",
+      "state": "baseline",
+      "fingerprint": "892a5e855d90809cc9e1a5a59a3a096e0b9fef9a54b5c5c434b190923d219d24",
+      "snippets": [
+        "Cursos MOOC 2026 de la ENAP - SERVIR: Libres, gratuitos y certificados - Campañas - Autoridad Nacional del Servicio Civil - Plataforma del Estado Peruano Saltar a contenido principal Texto de b",
+        "RVIR Campañas y eventos Cursos MOOC 2026 de la ENAP - SERVIR: Libres, gratuitos y certificados Autoridad Nacional del Servicio Civil Cursos MOOC 2026 de la ENAP - SERVIR: Libres, gratuitos y certificados Proceso final",
+        "onal del Servicio Civil Cursos MOOC 2026 de la ENAP - SERVIR: Libres, gratuitos y certificados Proceso finalizado Fortalece tus conocimientos sobre el SAGRH y otros temas relacionados. Aula virtual La Autoridad Nacion"
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-5",
+      "institution": "SERVIR municipalidades",
+      "url": "https://sites.google.com/servir.gob.pe/mimunimecapacita/inicio",
+      "checked_at": "2026-10-26T19:01:20.771632+00:00",
+      "state": "baseline",
+      "fingerprint": "ba6d46d84be2581946d29ef09c0b788b23e9d29dc4935029e2cca92579386a1b",
+      "snippets": [
+        "o main content Skip to navigation Mi Muni me capacita Programación de capacitaciones del PDP 2026 - Municipalidades En proceso de desarrollo C urso “Transformación digital para gobiernos locales” Datos del curso: Modalidad",
+        "30 días posteriores a la culminación del curso. Proceso Formulario de inscripción: https://forms.gle/G1XY75xBVoiaYusJ8 Fecha límite para inscribirse: Lunes 5 de octubre hasta las 9 am, o hasta agotar estock 🚨 Importante: ",
+        "una vacante. Los datos consignados serán utilizados para gestionar la matrícula de los participantes y el envío de las credenciales de acceso al Aula Virtual de la ENAP. Los servidores deberán firmar su formato de compr"
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-6",
+      "institution": "Municipalidad de Lima",
+      "url": "https://www.gob.pe/institucion/munilima/noticias/1427868-capacitate-gratis-y-potencia-tu-emprendimiento-municipalidad-de-lima-ofrece-mas-de-280-cursos-tecnico-productivos",
+      "checked_at": "2026-10-26T19:01:20.987126+00:00",
+      "state": "baseline",
+      "fingerprint": "20284089e1af1f354e57e6dddd2058a212982a53f265934489a2a7d99b5d6400",
+      "snippets": [
+        " de mil personas ya se sumaron a “Capacítate Lima”, que ofrece cursos gratuitos en gastronomía, confección textil, cosmetología, carpintería, mecánica de motos, electricidad y gestión empresarial. Oficina de Comunicac",
+        "ndedores “Capacítate Lima”, que ofrece 288 cursos técnico-productivos gratuitos dirigidos a personas que buscan adquirir nuevas habilidades, iniciar un negocio o fortalecer un emprendimiento. En esta segunda etapa, la",
+        "amina, mecánica de motocicletas e instalaciones eléctricas, además de capacitaciones vinculadas con gestión empresarial y formalización. Hasta el momento, 1031 personas ya se han inscrito. De ellas, 555 corresponden a la m"
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-7",
+      "institution": "Fundación Romero / becas",
+      "url": "https://www.becasgruporomero.pe/",
+      "checked_at": "2026-10-26T19:01:21.165589+00:00",
+      "state": "baseline",
+      "fingerprint": "376ad70e27aabf4af5a53f0a75ad9589fea56d512ba42f300a83b57f63e9066c",
+      "snippets": [
+        "lidad y emprendimiento de las familias peruanas, entregándoles acceso gratuito a cursos 100% virtuales de nuestro Campus Romero. Una metodología de Cursos disponibles Rutas de aprendizaje Entrega de certificados Diseñ",
+        "mpleabilidad de más peruanos. Conocer más Entregamos cursos virtuales gratuitos a los bomberos y sus familias para impulsar su espíritu emprendedor y empleabilidad. Conocer más Acercamos herramientas digitales que pot",
+        "ias sobre becas Amazon Web Services y Fundación Romero ofrecen cursos gratuitos en inteligencia artificial y nube para más de 250 mil personas AWS Entrena Perú, es la plataforma con la que AWS y Fundación Romero busca"
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-8",
+      "institution": "Fundación Telefónica / Conecta Empleo",
+      "url": "https://www.fundaciontelefonica.com.pe/conecta-empleo/",
+      "checked_at": "2026-10-26T19:01:21.303153+00:00",
+      "state": "access_failure",
+      "fingerprint": null,
+      "snippets": [],
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "watch-9",
+      "institution": "SENATI empresas",
+      "url": "https://empresas.senati.edu.pe/",
+      "checked_at": "2026-10-26T19:01:21.428127+00:00",
+      "state": "baseline",
+      "fingerprint": "4f53c5e3d015d4ba7a896570bf330116316e6126eb861eb9ccbb0b480487a22f",
+      "snippets": [
+        "cepción e Imagen de Institutos 2025 WEB SENATI USE SENATI Programa de capacitación IN HOUSE - A LA MEDIDA Asesoría Experiencia Especialización Ver video USE SENATI Programa de capacitación para empresas contribuyentes Bole",
+        "Asesoría Experiencia Especialización Ver video USE SENATI Programa de capacitación para empresas contribuyentes Boletín de cursos multiempresariales Nosotros ¡Potenciamos el talento, impulsamos empresas! La Unidad de Servi",
+        "a Unidad de Servicios Empresariales de SENATI desarrolla programas de capacitación enfocados a identificar y resolver las dificultades que puedan estar enfrentando las empresas. Cuenta con un equipo multidisciplinario de e"
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-10",
+      "institution": "TECSUP",
+      "url": "https://www.tecsup.edu.pe/buscador-y-biblioteca/?tipo_programa=33",
+      "checked_at": "2026-10-26T19:01:21.628237+00:00",
+      "state": "baseline",
+      "fingerprint": "23c0dd7619cd81b77df801a2f821f8f6192f59f86ec9b36b55533883cf8cd9dd",
+      "snippets": [
+        "in límites Tecsup Virtual Formación a distancia Empresas Programas de capacitación técnica y gestión Programas de capacitación inmersiva | Eduverso Programas de Responsabilidad Social Centro de seguridad Manuales interacti",
+        "cia Empresas Programas de capacitación técnica y gestión Programas de capacitación inmersiva | Eduverso Programas de Responsabilidad Social Centro de seguridad Manuales interactivos de Operación y Mantenimiento Gestión y d",
+        "s nostrum exercitatio nem ullam. Filtros rápidos Nuevos Con descuento Gratuitos Populares Filtros aplicados Filtros avanzados Tipos de Programa Centro de Seguridad Educación Continua Curso Corto Programa de Especializ"
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-11",
+      "institution": "PRONABEC — India / ITEC",
+      "url": "https://www.pronabec.gob.pe/beca-india/",
+      "checked_at": "2026-10-26T19:01:21.807458+00:00",
+      "state": "baseline",
+      "fingerprint": "e8103812ee9f77e57ac6f30d1305dc46b4b84720aae40a85ddbaf71bbd726af7",
+      "snippets": [
+        "he Nominating Government. Conoce los cursos disponibles aquí Sobre la convocatoria Nivel de estudio: cursos cortos de posgrado Duración: depende del curso, puede variar de 2 semanas hasta 2 años Modalidad: Presencial y vir",
+        ".m. Whatsapp: +51 914 121 106 Central teléfonica: (01) 612-8230 Línea gratuita: 080000018 Facebook Instagram X-twitter Linkedin Icon-tiktok Youtube Flickr Spotify © Programa Nacional de Becas y Crédito Educativo | PRO"
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-12",
+      "institution": "PRONABEC convocatorias",
+      "url": "https://www.pronabec.gob.pe/category/vigente/",
+      "checked_at": "2026-10-26T19:01:22.544791+00:00",
+      "state": "baseline",
+      "fingerprint": "d84f55bb73fbc7b00ffcc4b69fb1b7bb3712739309ce1ab11c651ac2557871b5",
+      "snippets": [
+        "ersidades Brasileñas (GCUB). Beneficios Exención del pago de tasas de matrícula, cuotas mensuales o tasas académicas relacionadas con el programa de estudio elegido. Servicios […] Beca Brasil 2026 Read More » Beca Japon",
+        "al patrimonio cultural. Beneficios Entregados por el Gobierno polaco: Matrícula Beca Unesco Polonia 2026 2027 Read More » Beca India ITEC 2026 2027 Vigente / LA CAUSITA Público objetivo Profesionales peruanos en activid",
+        " de la Embajada de Francia en el Perú y Campus France Perú inician la convocatoria a las Becas de Excelencia para estudiantes peruanos que recibieron una aceptación para estudiar un máster en instituciones de educación sup"
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-13",
+      "institution": "SBS",
+      "url": "https://www.sbs.gob.pe/prevencion-de-lavado-activos/Semana-de-Prevencion-del-Lavado-de-Activos",
+      "checked_at": "2026-10-26T19:01:22.918389+00:00",
+      "state": "baseline",
+      "fingerprint": "beb5cb99abdb9e83a8186ead0655f781e81634c70dfc89e263ee8ca7dd0c880a",
+      "snippets": [
+        "rmación a remitir a la UIF Revisión de Listas de Interés Portal PLAFT Capacitación Cursos virtuales UIF Semana de Prevención del Lavado de Activos Normas Nacionales Normas de aplicación general de materia LA/FT Normas LA/F",
+        "rmación a remitir a la UIF Revisión de Listas de Interés Portal PLAFT Capacitación Cursos virtuales UIFv Sistema Nacional contra el LA/FT Nociones básicas del sistema contra LA/FT Medidas contra el LA/FT Congelamiento conf",
+        "e prevención LA/FT disponibles en el Aula Virtual SBS. Los cursos son gratuitos, autoinstructivos (sin la guía de un docente o tutor) y asincrónicos (se podrán llevar en cualquier horario del día, dentro de los plazos"
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-14",
+      "institution": "Congreso — cursos virtuales",
+      "url": "https://www3.congreso.gob.pe/participacion/cursos/cursos-vigentes/",
+      "checked_at": "2026-10-26T19:01:22.927601+00:00",
+      "state": "baseline",
+      "fingerprint": "95cc79cb55d54426be9c5bb796cfa040f918ecd066e56f859a1d42dcf85f9b53",
+      "snippets": [
+        " Última Actividad Testimonios Estadísticas Galería Fotográfica Videos Inscripciones Parlamento Mujer Metodología Eventos Última Actividad Actividades Históricas Videos Históricos Inscripciones Bases Parlamento Universitar",
+        "gía Eventos Última Actividad Actividades Históricas Videos Históricos Inscripciones Bases Parlamento Universitario Presentación Testimonios Proceso de capacitación Manuales y materiales Eventos realizados Videos Histórico",
+        "es Bases Parlamento Universitario Presentación Testimonios Proceso de capacitación Manuales y materiales Eventos realizados Videos Históricos Actividades Históricos Última Actividad Preguntas frecuentes Última Actividad Úl"
+      ],
+      "error": null
+    },
+    {
+      "id": "watch-15",
+      "institution": "Google Career Certificates / Coursera",
+      "url": "https://grow.google/certificates",
+      "checked_at": "2026-10-26T19:01:23.542578+00:00",
+      "state": "baseline",
+      "fingerprint": "9281c1f333a35448a93baa507946057d76aee72ddbc76089eaf85c1c7b988bbe",
+      "snippets": [],
+      "error": null
+    },
+    {
+      "id": "watch-16",
+      "institution": "edX",
+      "url": "https://support.edx.org/hc/en-us/articles/1500003964681-What-is-the-audit-track",
+      "checked_at": "2026-10-26T19:01:23.692167+00:00",
+      "state": "access_failure",
+      "fingerprint": null,
+      "snippets": [],
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "watch-17",
+      "institution": "NVIDIA",
+      "url": "https://www.nvidia.com/en-us/training/self-paced-courses/?section=free-courses",
+      "checked_at": "2026-10-26T19:01:23.826211+00:00",
+      "state": "baseline",
+      "fingerprint": "c05324fb3d4321ec189aafa3e49e25a1c027bce56f0054832eed48c8adfffc3e",
+      "snippets": [],
+      "error": null
+    },
+    {
+      "id": "watch-18",
+      "institution": "Palo Alto Networks",
+      "url": "https://www.paloaltonetworks.com/services/education",
+      "checked_at": "2026-10-26T19:01:23.909621+00:00",
+      "state": "baseline",
+      "fingerprint": "11d3a2601d08ac4b9ef97a3c0c9a3f6aeab9570babcb16f4a35ae27bce5335be",
+      "snippets": [],
+      "error": null
+    },
+    {
+      "id": "watch-19",
+      "institution": "SAP Learning",
+      "url": "https://learning.sap.com/helpcenter/learning-site",
+      "checked_at": "2026-10-26T19:01:24.220514+00:00",
+      "state": "baseline",
+      "fingerprint": "369c8474808242e33febcaf6d4a0d039d034cd9bcda47071019a1abb21ccad95",
+      "snippets": [],
+      "error": null
+    },
+    {
+      "id": "watch-20",
+      "institution": "AWS Educate",
+      "url": "https://aws.amazon.com/education/awseducate/",
+      "checked_at": "2026-10-26T19:01:24.400584+00:00",
+      "state": "baseline",
+      "fingerprint": "22fd706e3d89468b8e592c82de9de10618fd4a42f0fe81263e8050664fe96b56",
+      "snippets": [],
+      "error": null
+    }
+  ]
 }
